@@ -89,14 +89,14 @@ Main components
 
 header {
  position: relative;
- height: 70px;
+ height: 50px;
  width: 100%;
  background: #4e6361;
 }
 @media only screen and (min-width: 300px) {
 
 header {
- height: 70px;
+ height: 50px;
 }
 }
 
@@ -126,12 +126,12 @@ header {
 
 #cd-top-nav ul {
  height: 100%;
- padding-top: 18px;
+ padding-top: 11px;
 }
 
 #cd-top-nav li {
  display: inline-block;
- margin-right: 1em;
+ margin-right: 0.05em;
 }
 
 #cd-top-nav a {
@@ -247,7 +247,7 @@ header {
 
 #cd-menu-trigger .cd-menu-text {
  display: inline-block;
- line-height: 70px;
+ line-height: 53px;
 }
 
 #cd-menu-trigger .cd-menu-icon {
@@ -301,7 +301,7 @@ header {
 
 #cd-lateral-nav a {
  display: block;
- line-height: 2em;
+ line-height: 3em;
  padding: 0 16px 0 32px;
  color: #aab5b7;
 }
