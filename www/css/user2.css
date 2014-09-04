@@ -122,7 +122,7 @@ header {
 
 #cd-top-nav ul {
  height: 100%;
- padding-top: 11px;
+ padding-top: 9px;
 }
 
 #cd-top-nav li {
@@ -173,6 +173,7 @@ header {
  position: absolute;
  left: 50%;
  top: 50%;
+ margin-top: -1px;
  bottom: auto;
  right: auto;
  -webkit-transform: translateX(-50%) translateY(-50%);
