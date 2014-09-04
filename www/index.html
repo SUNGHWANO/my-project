@@ -12,7 +12,7 @@
 <main class="cd-main-content">
   <header>
     <nav id="cd-top-nav">
-      	<div id="devart"><a href="#0">dangol</a></div>
+      	<div id="app"><a href="#0">dangol</a></div>
       <ul>
         <li><a href="#0">login</a></li>
         <li><a href="#0">signup</a></li>
@@ -109,19 +109,22 @@
 
 		}
 	});
- 	//open (or close) submenu items in the lateral menu. Close all the other open submenu items.
-		var updown = true;
+
+	var updown = true;
+		//open (or close) submenu items in the lateral menu. Close all the other open submenu items.
 	$('.item-has-children').children('a').on('click', function(event){
-		event.preventDefault();
-		if(updown == true){
-				$(this).toggleClass('submenu-open').next('.sub-menu').slideDown(200);
-				updown = false;
+			event.preventDefault();
+		if(updown == true){		
+			var updown = $(this).toggleClass('submenu-open').next('.sub-menu').slideDown(400).end();
+			updown.parent('.item-has-children').siblings('.item-has-children').children('a').removeClass('submenu-open').next('.sub-menu').slideUp(400);
+			updown = false;
 			}else{
-				$(this).toggleClass('submenu-open').next('.sub-menu').slideUp(200);
-				updown = true;
+			$(this).toggleClass('submenu-open').next('.sub-menu').slideToggle(400).end().parent('.item-has-children').siblings('.item-has-children').children('a').removeClass('submenu-open').next('.sub-menu').slideUp(400);
+			updown = true;
 			}
-		}); 		
+		});
 	});
+	
 </script>
 <script type="text/javascript">
 
