@@ -93,11 +93,9 @@ header {
  width: 100%;
  background: #4e6361;
 }
-@media only screen and (min-width: 300px) {
 
 header {
  height: 50px;
-}
 }
 
 #cd-logo {
@@ -109,17 +107,15 @@ header {
 #cd-logo img {
  display: block;
 }
-@media only screen and (min-width: 300px) {
 
 #cd-logo {
  margin: 22px 0 0 30px;
-}
 }
 
 #cd-top-nav {
  position: absolute;
  top: 0;
- right: 120px;
+ right: 71px;
  height: 100%;
  display: none;
 }
@@ -149,11 +145,9 @@ header {
 .no-touch #cd-top-nav a:hover {
  color: rgba(255, 255, 255, 0.7);
 }
-@media only screen and (min-width: 300px) {
 
 #cd-top-nav {
  display: block;
-}
 }
 
 #cd-menu-trigger {
@@ -238,10 +232,9 @@ header {
  -o-transform: rotate(-45deg);
  transform: rotate(-45deg);
 }
-@media only screen and (min-width: 300px) {
 
 #cd-menu-trigger {
- width: 110px;
+ width: 60px;
  padding-left: 1.25em;
 }
 
@@ -258,7 +251,6 @@ header {
  -ms-transform: translateX(0);
  -o-transform: translateX(0);
  transform: translateX(0);
-}
 }
 
 #cd-lateral-nav {
@@ -314,11 +306,9 @@ header {
 .no-touch #cd-lateral-nav a:hover {
  color: #FFF;
 }
-@media only screen and (min-width: 300px) {
 
 #cd-lateral-nav .cd-navigation {
  margin: 20px 0;
-}
 }
 
 #cd-lateral-nav.lateral-menu-is-open {
