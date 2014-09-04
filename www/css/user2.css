@@ -4,9 +4,6 @@ Primary style
 
 -------------------------------- */
 
-
-
-
 html * {
  -webkit-font-smoothing: antialiased;
  -moz-osx-font-smoothing: grayscale;
@@ -92,11 +89,11 @@ Main components
 
 header {
  position: relative;
- height: 50px;
+ height: 70px;
  width: 100%;
  background: #4e6361;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
 
 header {
  height: 70px;
@@ -112,7 +109,7 @@ header {
 #cd-logo img {
  display: block;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
 
 #cd-logo {
  margin: 22px 0 0 30px;
@@ -152,7 +149,7 @@ header {
 .no-touch #cd-top-nav a:hover {
  color: rgba(255, 255, 255, 0.7);
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
 
 #cd-top-nav {
  display: block;
@@ -241,7 +238,7 @@ header {
  -o-transform: rotate(-45deg);
  transform: rotate(-45deg);
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
 
 #cd-menu-trigger {
  width: 110px;
@@ -317,7 +314,7 @@ header {
 .no-touch #cd-lateral-nav a:hover {
  color: #FFF;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
 
 #cd-lateral-nav .cd-navigation {
  margin: 20px 0;
