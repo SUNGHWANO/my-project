@@ -5,6 +5,7 @@
 <title>jQuery Expandable Navigation Demo</title>
 <link href="css/user.css" rel="stylesheet" type="text/css">
 <link href="css/user2.css" rel="stylesheet" type="text/css">
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 </head>
 
 <body>
@@ -18,30 +19,6 @@
       </ul>
     </nav>
     <a id="cd-menu-trigger" href="#0"><span class="cd-menu-text"></span><span class="cd-menu-icon"></span></a> </header>
-
-<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js" ></script>
-<style type="text/css">
-.ex_show_3000{float:left;margin-right:20px;cursor:pointer}
-.ex_hide_fast{float:left;cursor:pointer}
-.ex_box_3f{clear:both; float:left; width:100px; height:100px; background-color:yellow; border:1px solid skyblue; border-radius:10px}
-</style>    
-<script type="text/javascript">
-$(function(){
-var ex_show_3000 = $('.ex_show_3000');
-var ex_hide_fast = $('.ex_hide_fast');
-var ex_box_3f = $('.ex_box_3f');
-ex_show_3000.click(function(){
-ex_box_3f.slideDown(300);
-});
-ex_hide_fast.click(function(){
-ex_box_3f.slideUp(300);
-});
-});
-</script>
-<b class="ex_show_3000">show click!!</b>
-<b class="ex_hide_fast">hide click!!</b>
-<div class="ex_box_3f"></div>
-    
 </main>
 
 <!-- cd-main-content -->
@@ -96,7 +73,7 @@ ex_box_3f.slideUp(300);
   <!-- socials --> 
 </nav>
 </body>
-<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
 <script>jQuery(document).ready(function($){
 	var $lateral_menu_trigger = $('#cd-menu-trigger'),
 		$content_wrapper = $('.cd-main-content');
@@ -133,11 +110,20 @@ ex_box_3f.slideUp(300);
 		}
 	});
 
-	//open (or close) submenu items in the lateral menu. Close all the other open submenu items.
+
+	$('.item-has-children').children('a').on('click', function(event){
+		$('.sub-menu').slideDown(600);
+	});
+	 
+/* 	//open (or close) submenu items in the lateral menu. Close all the other open submenu items.
 	$('.item-has-children').children('a').on('click', function(event){
 		event.preventDefault();
 		$(this).toggleClass('submenu-open').next('.sub-menu').slideToggle(150).end().parent('.item-has-children').siblings('.item-has-children').children('a').removeClass('submenu-open').next('.sub-menu').slideUp(150);
-	});
+	}); */
+	
+	
+	
+	
 });
 </script>
 <script type="text/javascript">
