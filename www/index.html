@@ -27,7 +27,7 @@
   <ul class="cd-navigation">
     <li class="item-has-children"> <a href="#0">네네치킨</a>
       <ul class="sub-menu">
-        <li><a href="#0">rank : 80(5)</a></li>
+        <li class="aaa"><a href="#0">rank : 80(5)</a></li>
         <li><a href="#0">point : 39,000</a></li>
       </ul>
     </li>
@@ -115,6 +115,10 @@
 		$('.sub-menu').slideDown(600);
 	});
 	 
+	
+	$('.aaa').children('a').on('click', function(event){
+		$('.sub-menu').slideUp(200);
+	});
 /* 	//open (or close) submenu items in the lateral menu. Close all the other open submenu items.
 	$('.item-has-children').children('a').on('click', function(event){
 		event.preventDefault();
