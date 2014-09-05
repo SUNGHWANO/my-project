@@ -1,0 +1,84 @@
+html, body
+{
+	padding: 0px;
+	margin: 0px;
+}
+h1, h2, h3, h4, h5, h6
+{
+	color: #fff;
+	margin: 0px;
+}
+h1
+{
+	font-size: 40px;
+	font-family: 'Lora',serif;
+}
+h2, ul.aviate-menu a, ul.aviate-menu li .aviate_content a.submenu
+{
+	font-size: 34px;
+	font-family: 'Alegreya',serif;
+}
+h3
+{
+	font-size: 30px;
+	font-family: 'Alegreya',serif;
+}
+h4
+{
+	font-size: 26px;
+	font-family: 'Alegreya',serif;
+}
+h5
+{
+	font-size: 20px;
+	font-family: 'Alegreya',serif;
+}
+h6
+{
+	font-size: 16px;
+	font-family: 'Alegreya',serif;
+}
+ul>li>span
+{
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+}
+input[type=submit]
+{
+	width: 30%;
+	padding:10px;
+}
+input[type=text]
+{
+	width: 60%;
+	padding:10px;
+}
+#project
+{
+	width: 100%;
+	text-align: center;
+}
+#container a
+{
+	font-family: 'Lora',serif;
+	text-decoration: none;
+	padding: 20px;
+	color: #fff;
+	font-size: 20px;
+	-webkit-transition: all .3s ease-in;
+   -moz-transition: all .3s ease-in;
+   -o-transition: all .3s ease-in;
+   -ms-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+#container a:hover
+{
+	color: #fc0303;
+}
+#paypal
+{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 9;
+}

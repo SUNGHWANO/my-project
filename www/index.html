@@ -3,9 +3,24 @@
 <head>
 <meta charset="utf-8">
 <title>jQuery Expandable Navigation Demo</title>
+<!-- user -->
 <link href="css/user.css" rel="stylesheet" type="text/css">
 <link href="css/user2.css" rel="stylesheet" type="text/css">
 <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<script src='js/user.js'></script>
+<!-- photo -->
+<link rel='stylesheet' id='mainfontstyle-css'  href='http://fonts.googleapis.com/css?family=Lora:400,700' type='text/css' media='all' />
+<link rel='stylesheet' id='subfontstyle-css'  href='http://fonts.googleapis.com/css?family=Alegreya:400,700' type='text/css' media='all' />
+<link rel='stylesheet' id='bodyfontstyle-css'  href='http://fonts.gophantom.slider.jsogleapis.com/css?family=Kameron:400,700' type='text/css' media='all' />
+<link rel="stylesheet" href="css/photo.css">
+<link rel="stylesheet" href="css/photo2.css">
+<script type='text/javascript' src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type='text/javascript' src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/phantom.slider.min.js"></script>
+<script src="js/photo.js"></script>
+<link rel='canonical' href='http://sympies.com/phantom_jquery_touch_slider/' />
+<!--  -->
 </head>
 
 <body>
@@ -19,9 +34,70 @@
       </ul>
     </nav>
     <a id="cd-menu-trigger" href="#0"><span class="cd-menu-text"></span><span class="cd-menu-icon"></span></a> </header>
-
-    
-
+<!-- photo -->
+    <div style="width: 100%;" id="container">
+			<ul class="slider phs">
+				<li>
+					<img src="images/1.jpg" alt="image 1">
+					<span>
+						<h2>Smart & LightWeight jQuery Slider</h2>
+						<h6>Use arrow keys, swipe or the icons at the side to scroll</h6>
+						<div id="project">
+							<a style="float: left;" href="http://sympies.com/phantom-slider-jquery-touch-slider-plugin">Check out the Project Page</a>
+							<a style="float: right;" target="_blank" href="http://www.flickr.com/photos/monkey-kc/">Demo Images made by Kalvin Chan</a>
+						</div>
+					</span>
+				</li>
+				<li>
+					<img src="images/2.jpg" alt="image 2">
+					<span>
+						<h2>Supports HTML Elements in the Caption</h2>
+						<form>
+							<input type="text" placeholder="Enter your email address" value="">
+							<input type="submit" value="SEND">
+						</form>
+						<div id="project">
+							<a style="float: left;" href="http://sympies.com/phantom-slider-jquery-touch-slider-plugin">Check out the Project Page</a>
+							<a style="float: right;" target="_blank" href="http://www.flickr.com/photos/monkey-kc/">Demo Images made by Kalvin Chan</a>
+						</div>
+					</span>
+				</li>
+				<li>
+					<img src="images/3.jpg" alt="image 3">
+					<span>
+						<h2>Mobile Swipe Support</h2>
+						<h6>Responsive, always fit to the container element</h6>
+						<div id="project">
+							<a style="float: left;" href="http://sympies.com/phantom-slider-jquery-touch-slider-plugin">Check out the Project Page</a>
+							<a style="float: right;" target="_blank" href="http://www.flickr.com/photos/monkey-kc/">Demo Images made by Kalvin Chan</a>
+						</div>
+					</span>
+				</li>
+				<li>
+					<img src="images/4.jpg" alt="image 4">
+					<span>
+						<h2>60+ Animation Styles combined with jQuery UI</h2>
+						<h6>Fade and Slide with 30+ Easing</h6>
+						<div id="project">
+							<a style="float: left;" href="http://sympies.com/phantom-slider-jquery-touch-slider-plugin">Check out the Project Page</a>
+							<a style="float: right;" target="_blank" href="http://www.flickr.com/photos/monkey-kc/">Demo Images made by Kalvin Chan</a>
+						</div>
+					</span>
+				</li>
+				<li>
+					<img src="images/5.jpg" alt="image 5">
+					<span>
+						<h2>Download for FREE</h2>
+						<h5>Available on GitHub</h5>
+						<div id="project">
+							<a style="float: left;" href="http://sympies.com/phantom-slider-jquery-touch-slider-plugin">Check out the Project Page</a>
+							<a style="float: right;" target="_blank" href="http://www.flickr.com/photos/monkey-kc/">Demo Images made by Kalvin Chan</a>
+						</div>
+					</span>
+				</li>
+			 </ul>
+		</div>
+<!--  -->		    
 </main>
 
 <!-- cd-main-content -->
@@ -75,75 +151,6 @@
   <div class="cd-navigation socials"> <a class="cd-twitter cd-img-replace" href="#0">Twitter</a> <a class="cd-github cd-img-replace" href="#0">Git Hub</a> <a class="cd-facebook cd-img-replace" href="#0">Facebook</a> <a class="cd-google cd-img-replace" href="#0">Google Plus</a> </div>
   <!-- socials --> 
 </nav>
-
-</body>
-
-<script>jQuery(document).ready(function($){
-	var $lateral_menu_trigger = $('#cd-menu-trigger'),
-		$content_wrapper = $('.cd-main-content');
-
-	// fallback added for IE9 - transition not supported
-	var is_explorer_9 = navigator.userAgent.indexOf('MSIE 9') > -1;
-
-	//open-close lateral menu clicking on the menu icon
-	$lateral_menu_trigger.on('click', function(event){
-		event.preventDefault();
-		$lateral_menu_trigger.toggleClass('is-clicked');
-		$content_wrapper.toggleClass('lateral-menu-is-open').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-			// firefox transitions break when parent overflow is changed, so we need to wait for the end of the trasition to give the body an overflow hidden
-			$('body').toggleClass('overflow-hidden');
-		});
-		$('#cd-lateral-nav').toggleClass('lateral-menu-is-open');
-		if(is_explorer_9) {
-			$('body').toggleClass('overflow-hidden');
-		}
-	});
-
-	//close lateral menu clicking outside the menu itself
-	$content_wrapper.on('click', function(event){
-		if( !$(event.target).is('#cd-menu-trigger, #cd-menu-trigger span') ) {
-			$lateral_menu_trigger.removeClass('is-clicked');
-			$content_wrapper.removeClass('lateral-menu-is-open').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-				$('body').removeClass('overflow-hidden');
-			});
-			$('#cd-lateral-nav').removeClass('lateral-menu-is-open');
-			if(is_explorer_9) {
-				$('body').removeClass('overflow-hidden');
-			}
-
-		}
-	});
-
-	var updown = true;
-		//open (or close) submenu items in the lateral menu. Close all the other open submenu items.
-	$('.item-has-children').children('a').on('click', function(event){
-			event.preventDefault();
-		if(updown == true){		
-			var updown = $(this).toggleClass('submenu-open').next('.sub-menu').slideDown(400).end();
-			updown.parent('.item-has-children').siblings('.item-has-children').children('a').removeClass('submenu-open').next('.sub-menu').slideUp(400);
-			updown = false;
-			}else{
-			$(this).toggleClass('submenu-open').next('.sub-menu').slideToggle(400).end().parent('.item-has-children').siblings('.item-has-children').children('a').removeClass('submenu-open').next('.sub-menu').slideUp(400);
-			updown = true;
-			}
-		});
-	});
-	
-</script>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 
 </body>
 </html>
