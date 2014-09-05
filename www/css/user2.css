@@ -62,6 +62,7 @@ Main components
 
 
 .cd-main-content {
+	
  /* set a min-height and a z-index to be sure that the main element completely covers the lateral menu */
  min-height: 100%;
  position: relative;
@@ -113,11 +114,7 @@ header {
 }
 
 #cd-top-nav {
- position: absolute;
- top: 0;
- right: 71px;
- height: 100%;
- display: none;
+ margin-left: 4%;
 }
 
 #cd-top-nav ul {

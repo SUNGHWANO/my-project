@@ -34,15 +34,6 @@ body {
 ol, ul {
 	list-style: none;
 }
-#app {
-	background-color: #F5BCA9;
-	width: 95px;
-	position: absolute;
-	margin-left: -105px;;
-	height: 50px;
-	line-height: 35px;
-	text-align: center;
-}
 blockquote, q {
 	quotes: none;
 }
