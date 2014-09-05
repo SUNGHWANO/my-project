@@ -1,41 +1,119 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 8) ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
 <head>
-<meta charset="utf-8">
-<title>jQuery Expandable Navigation Demo</title>
-<!-- user -->
-<link href="css/user.css" rel="stylesheet" type="text/css">
-<link href="css/user2.css" rel="stylesheet" type="text/css">
-<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
-<script src='js/user.js'></script>
-<!-- photo -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Phantom Touch Slider | LightWeight Smart jQuery Slider</title>
 <link rel='stylesheet' id='mainfontstyle-css'  href='http://fonts.googleapis.com/css?family=Lora:400,700' type='text/css' media='all' />
 <link rel='stylesheet' id='subfontstyle-css'  href='http://fonts.googleapis.com/css?family=Alegreya:400,700' type='text/css' media='all' />
-<link rel='stylesheet' id='bodyfontstyle-css'  href='http://fonts.gophantom.slider.jsogleapis.com/css?family=Kameron:400,700' type='text/css' media='all' />
-<link rel="stylesheet" href="css/photo.css">
-<link rel="stylesheet" href="css/photo2.css">
+<link rel='stylesheet' id='bodyfontstyle-css'  href='http://fonts.googleapis.com/css?family=Kameron:400,700' type='text/css' media='all' />
+<link rel="stylesheet" href="css/phantom.slider.css">
 <script type='text/javascript' src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script type='text/javascript' src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 <script src="js/jquery.mobile.custom.min.js"></script>
 <script src="js/phantom.slider.min.js"></script>
-<script src="js/photo.js"></script>
 <link rel='canonical' href='http://sympies.com/phantom_jquery_touch_slider/' />
-<!--  -->
-</head>
-
+<style>
+html, body
+{
+	padding: 0px;
+	margin: 0px;
+}
+h1, h2, h3, h4, h5, h6
+{
+	color: #fff;
+	margin: 0px;
+}
+h1
+{
+	font-size: 40px;
+	font-family: 'Lora',serif;
+}
+h2, ul.aviate-menu a, ul.aviate-menu li .aviate_content a.submenu
+{
+	font-size: 34px;
+	font-family: 'Alegreya',serif;
+}
+h3
+{
+	font-size: 30px;
+	font-family: 'Alegreya',serif;
+}
+h4
+{
+	font-size: 26px;
+	font-family: 'Alegreya',serif;
+}
+h5
+{
+	font-size: 20px;
+	font-family: 'Alegreya',serif;
+}
+h6
+{
+	font-size: 16px;
+	font-family: 'Alegreya',serif;
+}
+ul>li>span
+{
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+}
+input[type=submit]
+{
+	width: 30%;
+	padding:10px;
+}
+input[type=text]
+{
+	width: 60%;
+	padding:10px;
+}
+#project
+{
+	width: 100%;
+	text-align: center;
+}
+#container a
+{
+	font-family: 'Lora',serif;
+	text-decoration: none;
+	padding: 20px;
+	color: #fff;
+	font-size: 20px;
+	-webkit-transition: all .3s ease-in;
+   -moz-transition: all .3s ease-in;
+   -o-transition: all .3s ease-in;
+   -ms-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+#container a:hover
+{
+	color: #fc0303;
+}
+#paypal
+{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 9;
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function() {
+		$("#container").css("height",$(window).height()+"px");
+		$(".slider").phslider({'animation_time':700,'easing':'easeInOutQuint','animation':'slide','title_time':400,'title_easing':'easeInOutBack','controls':true,'autoplay':false});
+})
+</script>
+</head> 
 <body>
-<main class="cd-main-content">
-  <header>
-    <nav id="cd-top-nav">
-      <ul>
-      	<li><a href="#0">dangol</a></li>
-        <li><a href="#0">login</a></li>
-        <li><a href="#0">signup</a></li>
-      </ul>
-    </nav>
-    <a id="cd-menu-trigger" href="#0"><span class="cd-menu-text"></span><span class="cd-menu-icon"></span></a> </header>
-<!-- photo -->
-    <div style="width: 100%;" id="container">
+		<div style="width: 100%;" id="container">
 			<ul class="slider phs">
 				<li>
 					<img src="images/1.jpg" alt="image 1">
@@ -97,60 +175,11 @@
 				</li>
 			 </ul>
 		</div>
-<!--  -->		    
-</main>
-
-<!-- cd-main-content -->
-
-<nav id="cd-lateral-nav">
-  <ul class="cd-navigation">
-    <li class="item-has-children"> <a href="#0">네네치킨</a>
-      <ul class="sub-menu">
-        <li><a href="#0">rank : 80(5)</a></li>
-        <li><a href="#0">point : 39,000</a></li>
-      </ul>
-    </li>
-    <!-- item-has-children -->
-    
-    <li class="item-has-children"> <a href="#0">피자마스터</a>
-      <ul class="sub-menu">
-        <li><a href="#0">rank : 1(110)</a></li>
-        <li><a href="#0">point : 100,000</a></li>
-      </ul>
-    </li>
-    <!-- item-has-children -->
-    
-    <li class="item-has-children"> <a href="#0">교촌치킨</a>
-      <ul class="sub-menu">
-        <li><a href="#0">rank : 50(30)</a></li>
-        <li><a href="#0">point : 50,000</a></li>
-      </ul>
-    </li>
-    <!-- item-has-children -->
-  </ul>
-  <!-- cd-navigation -->
-  
-  <ul class="cd-navigation cd-single-item-wrapper">
-    <li><a href="#0">Tour</a></li>
-    <li><a href="#0">Login</a></li>
-    <li><a href="#0">Register</a></li>
-    <li><a href="#0">Pricing</a></li>
-    <li><a href="#0">Support</a></li>
-  </ul>
-  <!-- cd-single-item-wrapper -->
-  
-  <ul class="cd-navigation cd-single-item-wrapper">
-    <li><a class="current" href="#0">Journal</a></li>
-    <li><a href="#0">FAQ</a></li>
-    <li><a href="#0">Terms &amp; Conditions</a></li>
-    <li><a href="#0">Careers</a></li>
-    <li><a href="#0">Students</a></li>
-  </ul>
-  <!-- cd-single-item-wrapper -->
-  
-  <div class="cd-navigation socials"> <a class="cd-twitter cd-img-replace" href="#0">Twitter</a> <a class="cd-github cd-img-replace" href="#0">Git Hub</a> <a class="cd-facebook cd-img-replace" href="#0">Facebook</a> <a class="cd-google cd-img-replace" href="#0">Google Plus</a> </div>
-  <!-- socials --> 
-</nav>
-
+		<form id="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="MLYX8Y85J47J4">
+			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+			<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+		</form>
 </body>
 </html>
