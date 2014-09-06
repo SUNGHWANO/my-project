@@ -36,7 +36,18 @@
             <div class="page-content">
               <div class="content-block">               
                 <!-- main -->  
-                <div>dddd</div>       
+                <div class="slider-container">
+                <div class="slider-wrapper">
+                  <div class="slider-slide"><img src="images/2.jpg"></div>
+                  <div class="slider-slide"><img src="images/6.jpg"></div>
+                  <div class="slider-slide"><img src="images/3.jpg"></div>
+                  <div class="slider-slide"><img src="images/4.jpg"></div>
+                  <div class="slider-slide"><img src="images/5.jpg"></div>
+                  <div class="slider-slide"><img src="images/1.jpg"></div>
+                </div>
+                <div class="slider-pagination"></div>
+              </div>
+              dsf<br>dsf<br>dsf<br>dsf<br>
                 <!-- main -->
               </div>
             </div>
@@ -45,8 +56,20 @@
       </div>
     </div>
     <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- img -->
+    <style>
+      img{width:100%;height:100%;}
+    </style>
+    <script>
+      var myApp = new Framework7(); 
+      
+      var mySlider = myApp.slider('.slider-container', {
+        pagination:'.slider-pagination'
+      });
+    </script>
+    <!-- img -->
+    <!-- top bar -->
     <script>var myApp = new Framework7();</script>
-    <!--  -->
     <script>
     	$('.login').css('display', 'none');
     </script>
