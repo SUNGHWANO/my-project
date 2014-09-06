@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <title>My App</title>
+    <link rel="stylesheet" href="css/framework7.min.css">
+  </head>
+  <body>
+    <div class="panel-overlay"></div>
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+      	<!-- menu -->
+      	<!-- menu -->
+      </div>
+    </div>
+
+    <div class="views">
+      <div class="view view-main">
+        <div class="pages">
+          <div data-page="home" class="page navbar-fixed">
+            <div class="navbar">
+              	<div class="dangol">DANGOL</div>
+              <div class="navbar-inner">
+              	<!-- top -->
+                <div class="left"></div>
+                <div class="center"></div>
+                <div class="right"><div class="login">login</div></div>
+                <a href="#" class="open-panel">D:</a>
+                <!-- top -->
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="content-block">               
+                <!-- main -->  
+                <div class="slider-container">
+                <div class="slider-wrapper">
+                  <div class="slider-slide"><img src="images/2.jpg"></div>
+                  <div class="slider-slide"><img src="images/6.jpg"></div>
+                  <div class="slider-slide"><img src="images/3.jpg"></div>
+                  <div class="slider-slide"><img src="images/4.jpg"></div>
+                  <div class="slider-slide"><img src="images/5.jpg"></div>
+                  <div class="slider-slide"><img src="images/1.jpg"></div>
+                </div>
+                <div class="slider-pagination"></div>
+              </div>
+              dsf<br>dsf<br>dsf<br>dsf<br>
+                <!-- main -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- img -->
+    <style>
+      
+    </style>
+    <script>
+      var myApp = new Framework7(); 
+      
+      var mySlider = myApp.slider('.slider-container', {
+        pagination:'.slider-pagination'
+      });
+    </script>
+    <!-- img -->
+    <!-- top bar -->
+    <script>var myApp = new Framework7();</script>
+    <script>
+    	$('.login').css('display', 'none');
+    </script>
+    <!--  -->
+  </body>
+</html>
