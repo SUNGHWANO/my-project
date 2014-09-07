@@ -3,7 +3,6 @@ $(function () {
     window.hidden = $("#hook").animate("marginTop", "-" + loadheight + "px");
     window.visible = $("#hook").animate("marginTop", "0px");
     $("#hook").css("marginTop", "-" + loadheight + "px");
-   
 });
 $(function hook() { 
     var loadheight = $('#hook').height();
