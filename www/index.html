@@ -3,38 +3,15 @@
 <head>
 <title>Insert title here</title>
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- index -->
+<link rel="stylesheet" href="css/index.css">
+<!-- index -->
 <!-- menulist -->
 <link rel="stylesheet" href="css/idangerous.swiper.css">
 <link rel="stylesheet" href="css/idangerous.swiper.scrollbar.css">
-<style>
-body{margin:0;}
-.swiper-slide{color:#fff;text-align:center;line-height:200px;}
-.swiper-scrollbar{height:10px;}
-.red-slide{background:#900;}
-.blue-slide{background:#06C;}
-.orange-slide{background:#F63;}
-</style>
+<link rel="stylesheet" href="css/menulist.css">
 <!-- menulist -->
 </head>
-<style>
-html, body{margin:0px;height:100%;}
-/* header */
-.header{display:table;border-bottom:1px solid #E6E6E6;width:100%;height:8%;position:fixed;background-color:white;}
-p{display:table-cell; text-align:center; vertical-align:middle;}
-.headerhidden{width:100%;height:8%;}
-/* header */
-/* middle */
-.middle{height:100%;width:100%;}
-/* middle */
-/* img */
-.container{width:100%;height:32%;background-color:#F2F2F2;}
-.block{width:90%;height:100%;margin:0 auto;}
-img{width:100%;height:100%;}
-/* img */
-/* menubar */
-.menubar{border-top:1px solid #E6E6E6;width:100%;height:8%;border-bottom:1px solid #E6E6E6;}
-/* menubar */
-</style>
 <body>
 <!-- header -->
 <div class="header">
@@ -78,20 +55,7 @@ Slide 4
 <!-- menulist -->
 <script src="js/idangerous.swiper.js"></script>
 <script src="js/idangerous.swiper.scrollbar.js"></script>
-<script>
-var mySwiper = new Swiper('.swiper-container',{
-//Enable Scrollbar
-scrollbar: {
-container :'.swiper-scrollbar',
-hide: false,
-draggable: true,
-watchActiveIndex: true,
-onScrollbarDrag: function(){
-console.log('Dragging')
-}
-}
-})
-</script>
+<script src="js/menulist.js"></script>
 <!-- menulist -->
 </body>
 </html>
