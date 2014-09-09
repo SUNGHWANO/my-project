@@ -7,7 +7,7 @@ $(document).ready(function(){
 		var scroll_top = $(window).scrollTop(); 
 		console.log(scroll_top);
 		if (scroll_top > swiper_scrollbar_offset_top) { 
-			$('.swiper-scrollbar').css({ 'position': 'fixed', 'top':0 });
+			$('.swiper-scrollbar').css({ 'position': 'fixed', 'top':0, 'left':0 });
 		} else {
 			$('.swiper-scrollbar').css({ 'position': 'relative' }); 
 		}   
