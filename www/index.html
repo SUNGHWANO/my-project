@@ -57,5 +57,30 @@ Slide 4
 <script src="js/idangerous.swiper.scrollbar.js"></script>
 <script src="js/menulist.js"></script>
 <!-- menulist -->
+<script>
+$(document).ready(function(){
+	
+	var menubar_offset_top = $('.menubar').offset().top;
+	console.log(menubar_offset_top);
+	
+	var menubar = function(){
+		var scroll_top = $(window).scrollTop(); // our current vertical position from the top
+		console.log(scroll_top);
+		// if we've scrolled more than the navigation, change its position to fixed to stick to top, otherwise change it back to relative
+		if (scroll_top > menubar_offset_top) { 
+			$('.menubar').css({ 'position': 'fixed', 'top':0, 'left':0 });
+		} else {
+			$('.menubar').css({ 'position': 'relative' }); 
+		}   
+	};
+	
+	menubar();
+	
+	$(window).scroll(function() {
+		menubar();
+	});
+		
+});
+</script>
 </body>
 </html>
