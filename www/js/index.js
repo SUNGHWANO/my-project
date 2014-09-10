@@ -1,11 +1,11 @@
 /* autoscroll */
 $(document).ready(function() {
+	$('.swiper-slide').css({'overflow':'auto'});
 	
 	$(window).scroll(function() {
 	    if ($(window).scrollTop() == $(document).height() - $(window).height()) {
-	        $('.swiper-slide').css({'overflow':'auto'});
 	    }else{
-	    	$('.swiper-slide').css({'overflow':''});
+	    	//$('.swiper-slide').css({'overflow':''});
 	    }
 	});
 	
