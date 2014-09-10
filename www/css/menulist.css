@@ -2,3 +2,4 @@
 .swiper-wrapper{margin:0px;}
 .swiper-slide{text-align:center;line-height:200px;height:100%;margin:0px;background-color:white;line-height:400%;}
 .swiper-scrollbar{height:1%;background-color:white;margin:0px;box-shadow:0px 0px 35px #000;}
+.swiper-scrollbar-drag{border-radius:0px 0px 100px 100px;background-color:#A4A4A4;}
