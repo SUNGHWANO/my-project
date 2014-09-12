@@ -4,5 +4,5 @@
 .swiper-scrollbar{height:8%;margin:0px;opacity:0.28;position:fixed;width:100%;top:0px;}
 .swiper-scrollbar-drag{background-color:#A4A4A4;}
 /* footer */
-.footer{height:14%;width:100%;z-index:999;background-color: red;bottom:0;position:fixed;background-color:#E6E6E6;}
+.footer{height:8%;width:100%;z-index:999;background-color: red;bottom:0;position:fixed;background-color:#E6E6E6;}
 /* footer */

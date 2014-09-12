@@ -11,23 +11,41 @@ $(document).ready(function() {
 	
 });
 /* autoscroll */
-
+/* innerscroll */
 $(document).ready(function() {
 	
 	var lastScroll = 0;
-	$('.swiper-slide').scroll( function() {		
+	$('.swiper-slide').scroll(function() {		
 		var after = $(this).scrollTop();
 		if(after > lastScroll){			
+			$('.footer').animate({height: 0},"fast");
 			//console.log('down');
 			lastScroll = after;
 		}else{
+			$('.footer').animate({height: '8%'},"fast");
 			//console.log('up');
 			lastScroll = after;
 		}
 		});
 	
+});
+/* innerscroll */
+/* menuscroll */
+$(document).ready(function() {
 	
-	var a = $('.menubarcontainer').offset();
-	console.log(a);
+		var lastScroll = 0;
+		$(window).scroll(function() {		
+			var after = $(this).scrollTop();
+			if(after > lastScroll){	
+				$('.footer').animate({height: 0},"fast");
+				//console.log('down');
+				lastScroll = after;
+			}else{
+				$('.footer').animate({height: '8%'},"fast");
+				//console.log('up');
+				lastScroll = after;
+			}
+			});
 	
 });
+/* menuscroll */
