@@ -50,11 +50,11 @@ $(document).ready(function() {
 			
 			if($(this).scrollTop() > scrollFinish){
 				if(requsetSet){
-					$('.footer').animate({height: 0});
+					$('.footer').animate({height: '8%'},1);
 				}
 			}else if($(this).scrollTop() < scrollFinish){
 				if(requsetSet){
-					$('.footer').animate({height: '8%'});
+					$('.footer').animate({height: 0},1);
 				}
 			}
 			scrollFinish = $(this).scrollTop();
