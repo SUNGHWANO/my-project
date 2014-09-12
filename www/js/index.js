@@ -23,7 +23,7 @@ $(document).ready(function() {
 			console.log('down');
 		}else if(after < lastScroll){
 			lastScroll = after;
-			//$('.footer').animate({height: '8%'});
+			$('.footer').animate({height: '8%'});
 			console.log('up');
 		}
 		});
