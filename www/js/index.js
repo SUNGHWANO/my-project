@@ -21,7 +21,7 @@ $(document).ready(function() {
 			$('.footer').animate({height: 0},200);
 			console.log('down');
 			lastScroll = after;
-		}else{
+		}else if(after < lastScroll){
 			$('.footer').animate({height: '8%'},200);
 			console.log('up');
 			lastScroll = after;
