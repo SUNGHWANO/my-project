@@ -3,9 +3,11 @@ $(document).ready(function() {
 	
 	$(window).scroll(function() {
 	    if ($(window).scrollTop() == $(document).height() - $(window).height()) {
-	        $('.swiper-slide').css({'overflow':'auto'});     
-	    }else{
+	        $('.swiper-slide').css({'overflow':'auto'});    
+	        $('.footer').animate({height: 0});
+	    }else if($(window).scrollTop()){
 	    	$('.swiper-slide').css({'overflow':''});
+	    	$('.footer').animate({height: '8%'});
 	    }
 	});
 	
@@ -18,13 +20,13 @@ $(document).ready(function() {
 	$('.swiper-slide').scroll(function() {		
 		var after = $(this).scrollTop();
 		if(after > lastScroll){			
-			$('.footer').animate({height: 0},200);
+			lastScroll = after;
+			//$('.footer').animate({height: 0});
 			console.log('down');
-			lastScroll = after;
 		}else if(after < lastScroll){
-			$('.footer').animate({height: '8%'},200);
-			console.log('up');
 			lastScroll = after;
+			//$('.footer').animate({height: '8%'});
+			console.log('up');
 		}
 		});
 	
