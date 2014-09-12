@@ -3,10 +3,8 @@ $(document).ready(function() {
 	
 	$(window).scroll(function() {
 	    if ($(window).scrollTop() == $(document).height() - $(window).height()) {
-	    	$('.footer').animate({height: 0},200);
-	        $('.swiper-slide').css({'overflow':'auto'});       
+	        $('.swiper-slide').css({'overflow':'auto'});     
 	    }else{
-	    	$('.footer').animate({height: '8%'},200);
 	    	$('.swiper-slide').css({'overflow':''});
 	    }
 	});
@@ -20,12 +18,12 @@ $(document).ready(function() {
 	$('.swiper-slide').scroll(function() {		
 		var after = $(this).scrollTop();
 		if(after > lastScroll){			
-			//$('.footer').animate({height: 0},200);
-			//console.log('down');
+			$('.footer').animate({height: 0},200);
+			console.log('down');
 			lastScroll = after;
 		}else{
-			//$('.footer').animate({height: '8%'},200);
-			//console.log('up');
+			$('.footer').animate({height: '8%'},200);
+			console.log('up');
 			lastScroll = after;
 		}
 		});
