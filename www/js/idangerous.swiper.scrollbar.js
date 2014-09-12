@@ -50,4 +50,3 @@ swiper.h.removeEventListener(track,te.touchStart,dragStart,false)
 swiper.h.removeEventListener(lestenEl,te.touchMove,dragMove,false)
 swiper.h.removeEventListener(lestenEl,te.touchEnd,dragEnd,false)}}
 return hooks;}
-console.log(Swiper.prototype.plugins.scrollbar);
