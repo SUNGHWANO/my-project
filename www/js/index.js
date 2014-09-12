@@ -4,6 +4,7 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 	    if ($(window).scrollTop() == $(document).height() - $(window).height()) {
 	        $('.swiper-slide').css({'overflow':'auto'});       
+	        $('.footer').animate({height: 0},200);
 	    }else{
 	    	$('.swiper-slide').css({'overflow':''});
 	    }
@@ -18,11 +19,11 @@ $(document).ready(function() {
 	$('.swiper-slide').scroll(function() {		
 		var after = $(this).scrollTop();
 		if(after > lastScroll){			
-			$('.footer').animate({height: 0},"fast");
+			$('.footer').animate({height: 0},200);
 			//console.log('down');
 			lastScroll = after;
 		}else{
-			$('.footer').animate({height: '8%'},"fast");
+			$('.footer').animate({height: '8%'},200);
 			//console.log('up');
 			lastScroll = after;
 		}
@@ -30,22 +31,3 @@ $(document).ready(function() {
 	
 });
 /* innerscroll */
-/* menuscroll */
-$(document).ready(function() {
-	
-		var lastScroll = 0;
-		$(window).scroll(function() {		
-			var after = $(this).scrollTop();
-			if(after > lastScroll){	
-				$('.footer').animate({height: 0},"fast");
-				//console.log('down');
-				lastScroll = after;
-			}else{
-				$('.footer').animate({height: '8%'},"fast");
-				//console.log('up');
-				lastScroll = after;
-			}
-			});
-	
-});
-/* menuscroll */
