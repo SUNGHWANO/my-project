@@ -19,11 +19,11 @@ $(document).ready(function() {
 		var after = $(this).scrollTop();
 		if(after > lastScroll){			
 			lastScroll = after;
-			$('.footer').animate({height: 0},1);
+			$('.footer').animate({height: 0},100);
 			console.log('down');
 		}else if(after < lastScroll){
 			lastScroll = after;
-			$('.footer').animate({height: '8%'},1);
+				$('.footer').animate({height: '8%'},100);
 			console.log('up');
 		}
 		});
