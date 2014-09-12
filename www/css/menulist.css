@@ -3,3 +3,6 @@
 .swiper-slide{text-align:center;line-height:200px;height:100%;margin:0px;background-color:white;line-height:400%;}
 .swiper-scrollbar{height:8%;margin:0px;opacity:0.2;position:fixed;width:100%;top:0px;}
 .swiper-scrollbar-drag{background-color:#A4A4A4;}
+/* footer */
+.footer{height:14%;width:100%;z-index:999;background-color: red;bottom:0;position:fixed;background-color:rgba(0,0,0,0.07);}
+/* footer */
