@@ -32,11 +32,11 @@ $('.swiper-slide').bind('scroll', scroll);
 			if($(this).scrollTop() > scrollFinish){
 				if(requsetSet){
 					//$('.footer').animate({height: '0'},65);
-					$('.footer').slideUp();
+					$('.footer').slideUp('fast');
 				}
 			}else if($(this).scrollTop() < scrollFinish){
 				if(requsetSet){
-					$('.footer').slideDown();
+					$('.footer').slideDown('fast');
 				}
 			}
 			scrollFinish = $(this).scrollTop();
