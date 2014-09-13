@@ -55,7 +55,7 @@ $('.swiper-slide').bind('scroll', scroll);
 
 $(document).ready(function() {
 	
-	$(window).bind('scroll', scroll);
+/*	$(window).bind('scroll', scroll);
 	
 	var timer = setInterval(function(){
 		scrollOK = true;
@@ -83,6 +83,6 @@ $(document).ready(function() {
 		}
 	}
 	
-	scroll();
+	scroll();*/
 	
 });
