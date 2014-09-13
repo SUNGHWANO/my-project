@@ -31,20 +31,13 @@ $('.swiper-slide').bind('scroll', scroll);
 			console.log('dd');
 			if($(this).scrollTop() > scrollFinish){
 				if(requsetSet){
-					
-					//$('.footer').slideUp('fast');
-					//$('.middle').css({'height':'92%'});	
-					
-					$('.menubarcontainer').css({'display':'none'});
-					$('.footer').css({'display':'none'});
-					
+					$('.menubarcontainer').slideUp();
+					$('.footer').slideUp('fast');		
 				}
 			}else if($(this).scrollTop() < scrollFinish){
-				if(requsetSet){
-					//$('.footer').slideDown('fast');
-					//$('.middle').css({'height':'81%'});			
-					$('.menubarcontainer').css({'position':'fixed', 'top':'8%','display':''});
-					$('.footer').css({'display':''});
+				if(requsetSet){			
+					$('.menubarcontainer').slideDown();	
+					$('.footer').slideDown();			
 				}
 			}
 			scrollFinish = $(this).scrollTop();
