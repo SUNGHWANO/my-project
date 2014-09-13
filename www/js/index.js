@@ -32,14 +32,19 @@ $('.swiper-slide').bind('scroll', scroll);
 			if($(this).scrollTop() > scrollFinish){
 				if(requsetSet){
 					
-					$('.footer').slideUp('fast');
-					//$('.middle').css({'height':'92%'});				
+					//$('.footer').slideUp('fast');
+					//$('.middle').css({'height':'92%'});	
+					
+					$('.menubarcontainer').css({'display':'none'});
+					$('.footer').css({'display':'none'});
+					
 				}
 			}else if($(this).scrollTop() < scrollFinish){
 				if(requsetSet){
-					$('.footer').slideDown('fast');
-					$('.middle').css({'height':'81%'});			
-					
+					//$('.footer').slideDown('fast');
+					//$('.middle').css({'height':'81%'});			
+					$('.menubarcontainer').css({'position':'fixed', 'top':'8%','display':''});
+					$('.footer').css({'display':''});
 				}
 			}
 			scrollFinish = $(this).scrollTop();
