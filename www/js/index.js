@@ -5,11 +5,11 @@ $(document).ready(function() {
 	    if ($(window).scrollTop() == $(document).height() - $(window).height()) {
 	        $('.swiper-slide').css({'overflow':'auto'});    
 	    }else{
-	    	$('.swiper-slide').css({'overflow':''});
 	    	$('.topoption').css({'display':'none'});
+	    	$('.swiper-slide').css({'overflow':''});
 	    }
 	});
-	
+
 });
 /* autoscroll */
 /* innerscroll */
