@@ -31,11 +31,12 @@ $('.swiper-slide').bind('scroll', scroll);
 			console.log('dd');
 			if($(this).scrollTop() > scrollFinish){
 				if(requsetSet){
-					$('.footer').animate({height: '0'},65);		
+					//$('.footer').animate({height: '0'},65);
+					$('.footer').slideDown();
 				}
 			}else if($(this).scrollTop() < scrollFinish){
 				if(requsetSet){
-					$('.footer').animate({height: '8%'},65);
+					$('.footer').slideUp();
 				}
 			}
 			scrollFinish = $(this).scrollTop();
