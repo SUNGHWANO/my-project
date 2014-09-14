@@ -232,9 +232,9 @@ _this.updateActiveSlide=function(position){if(!_this.initialized)return;if(_this
 var leftDistance=Math.abs(_this.slidesGrid[i]+ position);var rightDistance=Math.abs(_this.slidesGrid[i+ 1]+ position);if(leftDistance<=rightDistance)_this.activeIndex=i;else _this.activeIndex=i+ 1;}}
 else{_this.activeIndex=Math[params.visibilityFullFit?'ceil':'round'](-position/slideSize);}
 if(_this.activeIndex===_this.slides.length)_this.activeIndex=_this.slides.length- 1;if(_this.activeIndex<0)_this.activeIndex=0;if(!_this.slides[_this.activeIndex])return;_this.calcVisibleSlides(position);if(_this.support.classList){var slide;for(i=0;i<_this.slides.length;i++){slide=_this.slides[i];slide.classList.remove(params.slideActiveClass);if(_this.visibleSlides.indexOf(slide)>=0){slide.classList.add(params.slideVisibleClass);}else{slide.classList.remove(params.slideVisibleClass);}}
-_this.slides[_this.activeIndex].classList.add(params.slideActiveClass);}else{var activeClassRegexp=new RegExp('\\s*'+ params.slideActiveClass);var inViewClassRegexp=new RegExp('\\s*'+ params.slideVisibleClass);for(i=0;i<_this.slides.length;i++){_this.slides[i].className=_this.slides[i].className.replace(activeClassRegexp,'').replace(inViewClassRegexp,'');if(_this.visibleSlides.indexOf(_this.slides[i])>=0){_this.slides[i].className+=' '+ params.slideVisibleClass;
+_this.slides[_this.activeIndex].classList.add(params.slideActiveClass);}else{var activeClassRegexp=new RegExp('\\s*'+ params.slideActiveClass);var inViewClassRegexp=new RegExp('\\s*'+ params.slideVisibleClass);for(i=0;i<_this.slides.length;i++){_this.slides[i].className=_this.slides[i].className.replace(activeClassRegexp,'').replace(inViewClassRegexp,'');if(_this.visibleSlides.indexOf(_this.slides[i])>=0){_this.slides[i].className+=' '+ params.slideVisibleClass;}}_this.slides[_this.activeIndex].className+=' '+ params.slideActiveClass;
 
-/*  */
+/**/
 var won = 1;
 var a = $('.swiper-slide')[0].className;
 var aa = a.split(' ')[1];
@@ -271,10 +271,9 @@ if(won == 1){
 	$('.menubar')[0].innerHTML = '미용, 패션, 쇼핑 등...';
 	//$('.topoption')[0].innerHTML = '미용, 패션, 쇼핑 등...';
 }
-/*  */
+/**/
 
-}}
-_this.slides[_this.activeIndex].className+=' '+ params.slideActiveClass;}
+}
 if(params.loop){var ls=_this.loopedSlides;_this.activeLoopIndex=_this.activeIndex- ls;if(_this.activeLoopIndex>=_this.slides.length- ls*2){_this.activeLoopIndex=_this.slides.length- ls*2- _this.activeLoopIndex;}
 if(_this.activeLoopIndex<0){_this.activeLoopIndex=_this.slides.length- ls*2+ _this.activeLoopIndex;}
 if(_this.activeLoopIndex<0)_this.activeLoopIndex=0;}
