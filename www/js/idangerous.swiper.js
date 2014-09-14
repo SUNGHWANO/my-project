@@ -260,16 +260,16 @@ console.log(won);
 
 if(won == 1){
 	$('.menubar')[0].innerHTML = '자장면, 치킨, 피자 등...';
-	//$('.topoption')[0].innerHTML = '자장면, 치킨, 피자 등...';
+	$('.topoption')[0].innerHTML = '자장면, 치킨, 피자 등...';
 }else if(won == 2){
 	$('.menubar')[0].innerHTML = '커피, 샐러드, 차 등...';
-	//$('.topoption')[0].innerHTML = '커피, 샐러드, 차 등...';
+	$('.topoption')[0].innerHTML = '커피, 샐러드, 차 등...';
 }else if(won == 3){
 	$('.menubar')[0].innerHTML = '맥주, 소주, 막걸리 등...';
-	//$('.topoption')[0].innerHTML = '맥주, 소주, 막걸리 등...';
+	$('.topoption')[0].innerHTML = '맥주, 소주, 막걸리 등...';
 }else if(won == 4){
 	$('.menubar')[0].innerHTML = '미용, 패션, 쇼핑 등...';
-	//$('.topoption')[0].innerHTML = '미용, 패션, 쇼핑 등...';
+	$('.topoption')[0].innerHTML = '미용, 패션, 쇼핑 등...';
 }
 /**/
 
