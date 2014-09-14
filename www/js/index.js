@@ -5,6 +5,7 @@ $(document).ready(function() {
 	        $('.swiper-slide').css({'overflow':'auto'});    
 	    }else{
 	    	$('.swiper-slide').css({'overflow':''});   	
+	    	$('.topoption').css({'display':'none'});
 	    }
 	});
 	/* autoscroll */
