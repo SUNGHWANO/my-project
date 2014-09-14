@@ -9,7 +9,5 @@ $(document).ready(function() {
 	    }
 	});
 	/* autoscroll */
-	$('.header').click(function(e){
-		e.preventDefalut();
-	});
+	$('.swiper-scrollbar').click(function(e){e.preventDefault();});
 });
