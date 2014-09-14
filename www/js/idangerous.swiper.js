@@ -244,7 +244,7 @@ won = 1;
 var a2 = $('.swiper-slide')[1].className;
 var aa2 = a2.split(' ')[1];
 if(aa2 == 'swiper-slide-visible'){
-won = 2;		
+won = 2;	
 }
 var a3 = $('.swiper-slide')[2].className;
 var aa3 = a3.split(' ')[1];
@@ -256,21 +256,48 @@ var aa4 = a4.split(' ')[1];
 if(aa4 == 'swiper-slide-visible'){
 won = 4;
 }
-console.log(won);
+/**/
+
+var scrollFinish = 0;
 
 if(won == 1){
 	$('.menubar')[0].innerHTML = '자장면, 치킨, 피자 등...';
 	$('.topoption')[0].innerHTML = '자장면, 치킨, 피자 등...';
+	scrollFinish = $('.swiper-slide')[0].scrollTop;
 }else if(won == 2){
 	$('.menubar')[0].innerHTML = '커피, 샐러드, 차 등...';
 	$('.topoption')[0].innerHTML = '커피, 샐러드, 차 등...';
+	scrollFinish = $('.swiper-slide')[1].scrollTop;
 }else if(won == 3){
 	$('.menubar')[0].innerHTML = '맥주, 소주, 막걸리 등...';
 	$('.topoption')[0].innerHTML = '맥주, 소주, 막걸리 등...';
+	scrollFinish = $('.swiper-slide')[2].scrollTop;
 }else if(won == 4){
 	$('.menubar')[0].innerHTML = '미용, 패션, 쇼핑 등...';
 	$('.topoption')[0].innerHTML = '미용, 패션, 쇼핑 등...';
+	scrollFinish = $('.swiper-slide')[3].scrollTop;
 }
+/**/
+$('.swiper-slide').scroll(function(){
+	
+	if($(this).scrollTop() > scrollFinish){
+					
+				$('.topoption').css({'display':'none'});
+				$('.footoption').css({'display':'none'});		
+			
+		}else if($(this).scrollTop() < scrollFinish){
+			
+				$('.topoption').css({'position':'fixed', 'top':'8%','display':''});
+				$('.footoption').css({'display':''});
+			
+		}
+		scrollFinish = $(this).scrollTop();
+	
+	if(scrollFinish == 0){
+		 $('.topoption').css({'display':'none'});
+	}
+	
+});
 /**/
 
 }
