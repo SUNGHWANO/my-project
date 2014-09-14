@@ -3,12 +3,13 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 	    if ($(window).scrollTop() == $(document).height() - $(window).height()) {
 	        $('.swiper-slide').css({'overflow':'auto'});    
-	        $('body').css({'overflow':'hidden'}).bind('touchmove', function(e){e.preventDefault()});
 	    }else{
 	    	$('.swiper-slide').css({'overflow':''});   	
 	    	$('.topoption').css({'display':'none'});
-	    	$('body').unbind('touchmove');
 	    }
 	});
 	/* autoscroll */
+	$('.header').click(function(e){
+		e.preventDefalut();
+	});
 });
