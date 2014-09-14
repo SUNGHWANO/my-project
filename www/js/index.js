@@ -9,5 +9,5 @@ $(document).ready(function() {
 	    }
 	});
 	/* autoscroll */
-	$('.swiper-scrollbar').click(function(e){e.preventDefault();});
+	$('.swiper-scrollbar').mousedown(function(e){$('.topoption').css({'display':'none'});});
 });
