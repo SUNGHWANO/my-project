@@ -1,7 +1,7 @@
 .swiper-container{width:100%;height:100%;margin-top:0px;}
 .swiper-wrapper{margin:0px;}
 .swiper-slide{text-align:center;line-height:200px;height:100%;margin:0px;background-color:white;line-height:400%;}
-.swiper-scrollbar{height:8%;margin:0px;opacity:0.25;position:fixed;width:100%;top:0px;}
+.swiper-scrollbar{height:9%;margin:0px;position:fixed;width:100%;top:0px;z-index:1;}
 .swiper-scrollbar-drag{background-color:#A4A4A4;}
 /* options */
 .topoption{z-index:999;background-color:#FAFAFA;width:100%;height:13%;}
