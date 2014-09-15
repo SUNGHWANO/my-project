@@ -306,12 +306,13 @@ $('.swiper-slide').scroll(function(){
 	
 	if($(this).scrollTop() > scrollFinish){
 					
-				$('.topoption').css({'display':'none'});
+				//$('.topoption').css({'display':'none'});
 				$('.footoption').css({'display':'none'});		
 			
 		}else if($(this).scrollTop() < scrollFinish){
 			
-				$('.topoption').css({'position':'fixed', 'top':'8%','display':''});
+				//$('.menubar').css({'position':'fixed', 'top':'41px','z-index':'9999'});
+				//$('.topoption').css({'position':'fixed', 'top':'8%','display':''});
 				$('.footoption').css({'display':''});
 			
 		}
