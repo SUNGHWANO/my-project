@@ -4,6 +4,6 @@
 .swiper-scrollbar{height:8%;margin:0px;opacity:0.25;position:fixed;width:100%;top:0px;}
 .swiper-scrollbar-drag{background-color:#A4A4A4;}
 /* options */
-.topoption{z-index:999;background-color:#E6E6E6;width:100%;height:13%;}
+.topoption{z-index:999;background-color:#FAFAFA;width:100%;height:13%;}
 .footoption{height:8%;width:100%;z-index:999;bottom:0;position:fixed;background-color:#FAFAFA;border-top:1px solid #E6E6E6;}
 /* options */
