@@ -5,9 +5,13 @@ $(document).ready(function() {
 	        $('.swiper-slide').css({'overflow':'auto'});    
 	    }else{
 	    	$('.swiper-slide').css({'overflow':''});   	
-	    	//$('.topoption').css({'display':'none'});
+	    	$('.topoption').css({'display':'none'});
 	    }
 	});
 	/* autoscroll */
-	$('.swiper-scrollbar').mousedown(function(e){$('.topoption').css({'display':'none'});});
+	$('.swiper-scrollbar').mousedown(function(e){
+		$('.topoption').css({'display':'none'});
+		var reset = $('body').offset();
+		$('html, body').animate({scrollTop : reset.top}, 500);
+		});
 });
