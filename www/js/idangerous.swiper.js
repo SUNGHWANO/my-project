@@ -261,20 +261,44 @@ won = 4;
 var scrollFinish = 0;
 
 if(won == 1){
-	$('.menubar')[0].innerHTML = '자장면, 치킨, 피자 등...';
-	$('.topoption')[0].innerHTML = '자장면, 치킨, 피자 등...';
+	$('.c1')[0].innerHTML = '치킨';
+	$('.c2')[0].innerHTML = '피자';
+	$('.c3')[0].innerHTML = '중국집';
+	$('.c4')[0].innerHTML = '분식';
+	$('.c5')[0].innerHTML = '국밥';
+	$('.c6')[0].innerHTML = '고기';
+	$('.c7')[0].innerHTML = '뷔페';
+	$('.c8')[0].innerHTML = '패스트푸드';
 	scrollFinish = $('.swiper-slide')[0].scrollTop;
 }else if(won == 2){
-	$('.menubar')[0].innerHTML = '커피, 샐러드, 차 등...';
-	$('.topoption')[0].innerHTML = '커피, 샐러드, 차 등...';
+	$('.c1')[0].innerHTML = '커피';
+	$('.c2')[0].innerHTML = '차';
+	$('.c3')[0].innerHTML = '샐러드';
+	$('.c4')[0].innerHTML = '빵';
+	$('.c5')[0].innerHTML = '아이스크림';
+	$('.c6')[0].innerHTML = '';
+	$('.c7')[0].innerHTML = '';
+	$('.c8')[0].innerHTML = '';
 	scrollFinish = $('.swiper-slide')[1].scrollTop;
 }else if(won == 3){
-	$('.menubar')[0].innerHTML = '맥주, 소주, 막걸리 등...';
-	$('.topoption')[0].innerHTML = '맥주, 소주, 막걸리 등...';
+	$('.c1')[0].innerHTML = '호프';
+	$('.c2')[0].innerHTML = '바';
+	$('.c3')[0].innerHTML = '세계맥주';
+	$('.c4')[0].innerHTML = '와인';
+	$('.c5')[0].innerHTML = '보드카';
+	$('.c6')[0].innerHTML = '';
+	$('.c7')[0].innerHTML = '';
+	$('.c8')[0].innerHTML = '';
 	scrollFinish = $('.swiper-slide')[2].scrollTop;
 }else if(won == 4){
-	$('.menubar')[0].innerHTML = '미용, 패션, 쇼핑 등...';
-	$('.topoption')[0].innerHTML = '미용, 패션, 쇼핑 등...';
+	$('.c1')[0].innerHTML = '미용';
+	$('.c2')[0].innerHTML = '헬스';
+	$('.c3')[0].innerHTML = '패션';
+	$('.c4')[0].innerHTML = '쇼핑';
+	$('.c5')[0].innerHTML = '기타';
+	$('.c6')[0].innerHTML = '';
+	$('.c7')[0].innerHTML = '';
+	$('.c8')[0].innerHTML = '';
 	scrollFinish = $('.swiper-slide')[3].scrollTop;
 }
 /**/

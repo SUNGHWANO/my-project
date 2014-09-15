@@ -12,6 +12,6 @@ $(document).ready(function() {
 	$('.swiper-scrollbar').mousedown(function(e){
 		$('.topoption').css({'display':'none'});
 		var reset = $('body').offset();
-		$('html, body').animate({scrollTop : reset.top}, 500);
+		$('html, body').animate({scrollTop : reset});
 		});
 });
