@@ -318,7 +318,7 @@ $('.swiper-slide').scroll(function(){
 		}
 		scrollFinish = $(this).scrollTop();
 	
-	if(scrollFinish <= 0){
+	if(scrollFinish < 0){
 		 //$('.topoption').css({'display':'none'});
 		 $(this).css({overflow:'hidden'}).bind('touchmove', function(e){e.preventDefault()});
 	}
