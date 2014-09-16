@@ -313,8 +313,8 @@ $('.swiper-slide').scroll(function(){
 			
 				//$('.menubar').css({'position':'fixed', 'top':'41px','z-index':'9999'});
 				//$('.topoption').css({'position':'fixed', 'top':'8%','display':''});
+				//$('.menubar').css({'position':'fixed'});
 				$('.footoption').css({'display':''});
-				
 		}
 		scrollFinish = $(this).scrollTop();
 	
