@@ -314,12 +314,13 @@ $('.swiper-slide').scroll(function(){
 				//$('.menubar').css({'position':'fixed', 'top':'41px','z-index':'9999'});
 				//$('.topoption').css({'position':'fixed', 'top':'8%','display':''});
 				$('.footoption').css({'display':''});
-			
+				
 		}
 		scrollFinish = $(this).scrollTop();
 	
 	if(scrollFinish <= 0){
-		 $('.topoption').css({'display':'none'});
+		 //$('.topoption').css({'display':'none'});
+		 $(this).css({overflow:'hidden'}).bind('touchmove', function(e){e.preventDefault()});
 	}
 	
 });
