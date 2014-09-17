@@ -307,12 +307,12 @@ $('.swiper-slide').scroll(function(){
 	if($(this).scrollTop() > scrollFinish){
 					
 				//$('.topoption').css({'display':'none'});
-				$('.menubar').css({'display':'none'});		
+				//$('.menubar').css({'display':'none'});		
 				$('.footoption').css({'display':'none'});		
 			
 		}else if($(this).scrollTop() < scrollFinish){
 			
-				$('.menubar').css({'position':'fixed', 'top':'8%','z-index':'9999','display':''});
+				//$('.menubar').css({'position':'fixed', 'top':'8%','z-index':'9999','display':''});
 				//$('.topoption').css({'position':'fixed', 'top':'8%','display':''});
 				//$('.menubar').css({'position':'fixed'});
 				$('.footoption').css({'display':''});
@@ -321,6 +321,7 @@ $('.swiper-slide').scroll(function(){
 	
 	if(scrollFinish < 0){
 		 //$('.topoption').css({'display':'none'});
+		 //$('.menubar').css({'display':'none'});
 		 $(this).css({overflow:'hidden'}).bind('touchmove', function(e){e.preventDefault()});
 	}
 	
