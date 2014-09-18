@@ -1,451 +1,446 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Transitions - jQuery Mobile Demos</title>
-	<link rel="stylesheet"  href="css/jquery.mobile-1.3.2.min.css">
-	<link rel="stylesheet" href="css/jqm-demos.css">
-	<link rel="shortcut icon" href="../../favicon.ico">
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-	<script src="js/jquery.js"></script>
-	<script src="js/index2.js"></script>
-	<script src="js/jquery.mobile-1.3.2.min.js"></script>
-	<style>
-        table { width:100%; border-spacing: 0; }
-        th { text-align:left; }
-        th h3 { margin:.6em 0 .6em .5em; }
-        th, td { vertical-align:top; border-top:1px solid #eee; padding: 1px 3px; background-color:#fcfcfc; }
-        td .ui-btn { margin:.4em 0 .5em 0; }
-        td .ui-btn-inner { padding: .4em 15px; }
-    </style>
-</head>
-<body>
-<div data-role="page" class="jqm-demos" data-quicklinks="true">
-
-	<div data-role="header" class="jqm-header">
-		<h1 class="jqm-logo"><a href="../../"><img src="../../_assets/img/jquery-logo.png" alt="jQuery Mobile Framework"></a></h1>
-		<a href="#" class="jqm-navmenu-link" data-icon="bars" data-iconpos="notext">Navigation</a>
-		<a href="#" class="jqm-search-link" data-icon="search" data-iconpos="notext">Search</a>
-<div class="jqm-search">
-    <ul class="jqm-list">
-<li data-section="Widgets" data-filtertext="accordions collapsible sets content formatting grouped inset mini"><a href="widgets/accordions/">Accordion</a></li>
-
-<li data-section="Widgets" data-filtertext="ajax navigation navigate event method"><a href="widgets/navigation/" data-ajax="false">AJAX Navigation</a></li>
-
-<li data-section="Widgets" data-filtertext="autocomplete filter reveal listviews remote listviewbeforefilter placeholder"><a href="widgets/autocomplete/" data-ajax="false">Autocomplete</a></li>
-
-<li data-section="Widgets" data-filtertext="buttons inputs forms inline theme grouped icons mini disabled"><a href="widgets/buttons/" data-ajax="false">Buttons</a></li>
-
-<li data-section="Widgets" data-filtertext="checkboxes checkboxradio inputs forms mini disabled"><a href="widgets/checkbox/">Checkboxes</a></li>
-
-<li data-section="Widgets" data-filtertext="collapsibles content formatting"><a href="widgets/collapsibles/" data-ajax="false">Collapsibles</a></li>
-
-<li data-section="Widgets" data-filtertext="controlgroups selects checkboxradio buttons horizontal vertical"><a href="widgets/controlgroups/">Controlgroup</a></li>
-
-<li data-section="Widgets" data-filtertext="dialogs modal popups"><a href="widgets/dialog/">Dialogs</a></li>
-
-<li data-section="Widgets" data-filtertext="fixed toolbars headers footers sections fullscreen"><a href="widgets/fixed-toolbars/">Fixed toolbars</a></li>
-
-<li data-section="Widgets" data-filtertext="flip toggle switch binary slider selects forms disabled"><a href="widgets/sliders/switch.html" data-ajax="false">Flip switch toggle</a></li>
-
-<li data-section="Widgets" data-filtertext="footer toolbars footers sections"><a href="widgets/footers/">Footer toolbar</a></li>
-
-<li data-section="Widgets" data-filtertext="forms inputs slider button range toggle switch label disabled accessible fieldcontains elements"><a href="widgets/forms/">Form elements</a></li>
-
-<li data-section="Widgets" data-filtertext="grids columns blocks content formatting rwd responsive"><a href="widgets/grids/">Grids</a></li>
-
-<li data-section="Widgets" data-filtertext="header toolbars fixed fullscreen sections"><a href="widgets/headers/">Header toolbar</a></li>
-
-<li data-section="Widgets" data-filtertext="icons buttons disc position"><a href="widgets/icons/">Icons</a></li>
-
-<li data-section="Widgets" data-filtertext="links navigation ajax prefetch cache"><a href="widgets/links/">Links</a></li>
-
-<li data-section="Widgets" data-filtertext="listviews thumbnails icons nested split button collapsible ul ol"><a href="widgets/listviews/" data-ajax="false">Listviews</a></li>
-
-<li data-section="Widgets" data-filtertext="ajax loader overlay spinner pages"><a href="widgets/loader/" data-ajax="false">Loader overlay</a></li>
-
-<li data-section="Widgets" data-filtertext="navbars navmenu toolbars links icons footer header"><a href="widgets/navbar/" data-ajax="false">Navbar</a></li>
-
-<li data-section="Widgets" data-filtertext="navbars persistent header footer links navmenu"><a href="widgets/fixed-toolbars/footer-persist-a.html">Navbar, persistent</a></li>
-
-<li data-section="Widgets" data-filtertext="pages single multipage templates ajax nav"><a href="widgets/pages/">Pages</a></li>
-
-<li data-section="Widgets" data-filtertext="panels sliding nav modal transition display reveal overlay push rwd responsive"><a href="widgets/panels/">Panels <span class="ui-li-count">New</span></a></li>
-
-<li data-section="Widgets" data-filtertext="popup dialog modal transition tooltip lightbox form overlay screen flip pop fade transition"><a href="widgets/popup/">Popup</a></li>
-
-<li data-section="Widgets" data-filtertext="radiobuttons checkboxradio inputs forms disabled grouped"><a href="widgets/radiobuttons/">Radio buttons</a></li>
-
-<li data-section="Widgets" data-filtertext="selectmenus custom native multiple optgroup disabled forms"><a href="widgets/selects/">Select</a></li>
-
-<li data-section="Widgets" data-filtertext="slider, single sliders range inputs forms disabled"><a href="widgets/sliders/" data-ajax="false">Slider, single</a></li>
-
-<li data-section="Widgets" data-filtertext="slider, dual range sliders rangesliders inputs forms disabled"><a href="widgets/sliders/rangeslider.html" data-ajax="false">Slider, dual range <span class="ui-li-count">New</span></a></li>
-
-<li data-section="Widgets" data-filtertext="tables column th td toggle responsive tables rwd hide show tabular"><a href="widgets/table-column-toggle/">Table, column toggle <span class="ui-li-count">New</span></a></li>
-
-<li data-section="Widgets" data-filtertext="tables reflow th td responsive rwd columns tabular"><a href="widgets/table-reflow/">Table, reflow <span class="ui-li-count">New</span></a></li>
-
-<li data-section="Widgets" data-filtertext="text inputs textarea numeric email tel file date time month clear pattern placeholder forms"><a href="widgets/textinputs/">Text inputs & textarea</a></li>
-
-<li data-section="Widgets" data-filtertext="page transitions animated pages ajax navigation flip slide fade pop" data-ajax="false"><a href="widgets/transitions/" data-ajax="false">Transitions</a></li>
-
-<li data-role="list-divider">Collapsibles</li>
-
-<li data-section="Demo Showcase" data-filtertext="dynamic collapsible set accordion append expand"><a href="examples/collapsibles/dynamic-collapsible.html" data-ajax="false">Dynamic collapsible</a></li>
-
-<li data-role="list-divider">Controlgroups</li>
-
-<li data-section="Demo Showcase" data-filtertext="dynamic controlgroup buttons selects checkboxes forms"><a href="examples/controlgroups/dynamic-controlgroup.html" data-ajax="false">Dynamic controlgroup</a></li>
-
-<li data-role="list-divider">Listviews</li>
-
-<li data-section="Demo Showcase" data-filtertext="grid listview responsive grids responsive listviews lists ul"><a href="examples/listviews/grid-listview.html" data-ajax="false">Grid Listview</a></li>
-
-<li data-section="Demo Showcase" data-filtertext="autodividers anchor jump scroll linkbars listviews lists ul"><a href="examples/listviews/autodividers-linkbar.html" data-ajax="false">Autodividers Linkbar</a></li>
-
-<li data-section="Demo Showcase" data-filtertext="listviews autodividers selector autodividersselector lists ul ol"><a href="examples/listviews/autodividers-selector.html" data-ajax="false">Autodividers Selector</a></li>
-
-<li data-role="list-divider">Navigation</li>
-
-<li data-section="Demo Showcase" data-filtertext="backbone and require.js example navigation router"><a href="examples/backbone-require/index.html" data-ajax="false">Backbone and Require.js example</a></li>
-
-<li data-section="Demo Showcase" data-filtertext="server redirection with server-side support php"><a href="examples/redirect/" data-ajax="false">Redirection with server-side support</a></li>
-
-<li data-role="list-divider">Panels</li>
-
-<li data-section="Demo Showcase" data-filtertext="panel styling slide panels sliding panels shadow rwd responsive breakpoint"><a href="examples/panels/panel-styling.html" data-ajax="false">Panel styling</a></li>
-
-<li data-section="Demo Showcase" data-filtertext="open panel on swipe panels left right"><a href="examples/panels/panel-swipe-open.html" data-ajax="false">Open panel on swipe</a></li>
-
-<li data-role="list-divider">Popups</li>
-
-<li data-section="Demo Showcase" data-filtertext="dynamic popups popup images lightbox"><a href="examples/popups/dynamic-popup.html" data-ajax="false">Dynamic popup</a></li>
-
-<li data-section="Demo Showcase" data-filtertext="arrow popups popover"><a href="examples/popups/arrow.html" data-ajax="false">Popup with arrow</a></li>
-
-<li data-role="list-divider">Responsive Tables</li>
-
-<li data-section="Demo Showcase" data-filtertext="responsive tables reflow stack custom styles"><a href="examples/tables/movie-list.html" data-ajax="false">Reflow: Custom styles</a></li>
-
-<li data-section="Demo Showcase" data-filtertext="responsive tables reflow heading groups rwd breakpoint"><a href="examples/tables/financial-grouped-reflow.html" data-ajax="false">Reflow: Heading groups</a></li>
-
-<li data-section="Demo Showcase" data-filtertext="responsive tables reflow refresh method dynamically inject data"><a href="examples/tables/reflow-refresh.html" data-ajax="false">Reflow: Refresh method</a></li>
-
-<li data-section="Demo Showcase" data-filtertext="responsive tables column toggle hide rwd breakpoint customization options"><a href="examples/tables/movie-list-toggle-options.html" data-ajax="false">Column toggle: Customization options</a></li>
-
-<li data-section="Demo Showcase" data-filtertext="responsive tables column toggle heading groups rwd breakpoint"><a href="examples/tables/financial-grouped-columns.html" data-ajax="false">Column toggle: Heading groups</a></li>
-
-<li data-section="Demo Showcase" data-filtertext="responsive tables column toggle refresh method dynamically inject data"><a href="examples/tables/columntoggle-refresh.html" data-ajax="false">Column toggle: Refresh method</a></li>
-
-<li data-section="Demo Showcase" data-filtertext="responsive tables table column toggle phone comparison rwd breakpoint"><a href="examples/tables/phone-compare.html" data-ajax="false">Column toggle demo: Phone comparison</a></li>
-
-<li data-role="list-divider">Sliders</li>
-
-<li data-section="Demo Showcase" data-filtertext="slider tooltip handle value extension input range sliders forms"><a href="examples/slider/tooltip.html" data-ajax="false">Tooltip extension</a></li>
-
-<li data-role="list-divider">Swipe</li>
-
-<li data-section="Demo Showcase" data-filtertext="swipe to navigate page transitions navigation"><a href="examples/swipe/swipe-page.html" data-ajax="false">Swipe to navigate</a></li>
-
-<li data-section="Demo Showcase" data-filtertext="swipe to delete list item listviews lists ul ol"><a href="examples/swipe/swipe-list.html" data-ajax="false">Swipe to delete list item</a></li>
-
-<li data-role="list-divider">Forms</li>
-
-<li data-section="Questions & Answers" data-filtertext="CSS styles apply widget scope wrap selector customize"><a href="faq/question-template.html">Why won't my CSS styles apply correctly to a widget?</a></li>
-
-<li data-section="Questions & Answers" data-filtertext="form update value enhance pageinit refresh"><a href="faq/updating-the-value-of-enhanced-form-elements-does-not-work.html">Updating the value of enhanced form elements does not work.</a></li>
-
-<li data-section="Questions & Answers" data-filtertext="HTML 5 inputs appearance keyboard picker calendar date time slider file color"><a href="faq/my-html-5-inputs-look-different-in-browsers.html">My HTML 5 inputs look different across devices and browsers.</a></li>
-
-<li data-section="Questions & Answers" data-filtertext="range search inputs slider number text degrade"><a href="faq/my-range-search-input-type-is-being-changed.html">My range or search inputs are being change to number/text.</a></li>
-
-<li data-section="Questions & Answers" data-filtertext="custom select popup dialog logic"><a href="faq/sometimes-custom-select-shows-as-dialog-popup.html">Sometimes my custom select shows as a popup other times its a dialog.</a></li>
-
-<li data-section="Questions & Answers" data-filtertext="disable button issue class method"><a href="faq/disabling-a-button-does-not-work.html">Disabling a button does not work.</a></li>
-
-<li data-section="Questions & Answers" data-filtertext="fixed toolbar header footer fullscreen select input bug issue"><a href="faq/controls-in-header-footer.html">Controls in my fixed header or footer are not responding or behave erratically.</a></li>
-
-<li data-role="list-divider">Pages</li>
-
-<li data-section="Questions & Answers" data-filtertext="head load scripts styles pageinit onload pagebeforecreate ajax nav pages"><a href="faq/scripts-and-styles-not-loading.html">Why aren't my scripts and styles loading?</a></li>
-
-<li data-section="Questions & Answers" data-filtertext="document.ready onload paginit DOM ready on ready scripts "><a href="faq/dom-ready-not-working.html">Why isn't DOM ready working for my scripts?</a></li>
-
-<li data-section="Questions & Answers" data-filtertext="ajax nav load page mobile.loadpage"><a href="faq/how-do-i-load-a-page.html">How do I load a page?</a></li>
-
-<li data-section="Questions & Answers" data-filtertext="ajax nav multi page document load"><a href="faq/why-is-only-the-first-page-loaded.html">Why is only the first page of my multi page document loaded?</a></li>
-
-<li data-section="Questions & Answers" data-filtertext="pass url query params ajax nav"><a href="faq/pass-query-params-to-page.html">I'm trying to pass query params to a page but it's not working?</a></li>
-
-<li data-section="Questions & Answers" data-filtertext="hash pass parameters information ajax nav"><a href="faq/pass-via-the-hash-to-page.html">I'm trying to pass information via the hash but it's not working?</a></li>
-
-<li data-section="Questions & Answers" data-filtertext="application cache status error isLocal ajax nav"><a href="faq/the-application-cache-is-not-working.html">I'm trying to use the application cache but it's not working.</a></li>
-
-<li data-section="Questions & Answers" data-filtertext=">create refresh event trigger pageInit refresh method content injected page not enhanced."><a href="faq/injected-content-is-not-enhanced.html">Content injected into a page is not enhanced.</a></li>
-
-<li data-section="Questions & Answers" data-filtertext=">create trigger event pageInit injected HTML"><a href="faq/triggering-create-on-injected-content-does-not-work.html">Triggering create on injected HTML does not work.</a></li>
-
-<li data-section="Questions & Answers" data-filtertext="auto-enhance element stop preventnative role none"><a href="faq/how-can-i-stop-auto-enhancement-of-elements.html">How can I stop JQM from auto-enhancing an element?</a></li>
-
-<li data-section="Questions & Answers" data-filtertext="auto-enhance block container parent stop preventnative role none"><a href="faq/how-can-i-stop-auto-enhancement-of-a-block-of-elements.html">How can I stop JQM from enhancing a block of elements?</a></li>
-
-<li data-section="Questions & Answers" data-filtertext="page title ajax nav head"><a href="faq/how-do-i-control-page-titles.html">How do I control page titles?</a></li>
-
-<li data-section="Questions & Answers" data-filtertext="ajax nav load page loadPage"><a href="faq/how-do-i-load-a-page.html">How do I load a page?</a></li>
-
-<li data-role="list-divider">Events</li>
-
-<li data-section="Questions & Answers" data-filtertext="touch mouse events vmouseover, vmousedown, vmousemove, vmouseup, vclick, vmousecancel"><a href="faq/how-do-i-use-touch-mouse-events.html">How do I use touch and mouse events?</a></li>
-
-<li data-role="list-divider">Theme and styling</li>
-
-<li data-section="Questions & Answers" data-filtertext="theme swatch css themeroller customize icons colors fonts style"><a href="faq/how-does-theming-work.html">How does theming work?</a></li>
-
-<li data-role="list-divider">Apps</li>
-
-<li data-section="Questions & Answers" data-filtertext="How do I need to configure PhoneGap Cordova?"><a href="faq/how-configure-phonegap-cordova.html">How do I need to configure PhoneGap/Cordova?</a></li>
-<!--
-<li data-role="list-divider">Navigation</li>
-
-<li data-section="Questions & Answers" data-filtertext=""><a href="faq/nav-is-acting-erraticly.html">The nav is acting erratically!</a></li>
-
-<li data-section="Questions & Answers" data-filtertext=""><a href="faq/deep-links-dont-work.html">Following a deep link ( a link to scroll to and id ) does not work.</a></li>
-
-<li data-section="Questions & Answers" data-filtertext=""><a href="faq/scripts-css-only-works-on-first-page-or-refresh.html">My script / css only works on first page or on refresh.</a></li>
-<li data-role="list-divider">Widgets</li>
-
-<li data-section="Questions & Answers" data-filtertext=""><a href="faq/cloned-content-double-enhanced.html">Cloning a widget or enhanced for element and enhancing causes "double" enhancement</a></li>
-
-<li data-section="Questions & Answers" data-filtertext=""><a href="faq/cloned-content-does-not-update.html">Cloned widget or enhanced element does not update</a></li>
-
-<li data-section="Questions & Answers" data-filtertext=""><a href="faq/data-enhance-false-does-not-work.html">Setting data-enhance="false" does not work.</a></li>
-
-<li data-role="list-divider">General</li>
-
-<li data-section="Questions & Answers" data-filtertext=""><a href="faq/selecting-element-by-id-not-working.html">Selecting elements by id only works sometimes or on first page!</a></li>
-
-<li data-section="Questions & Answers" data-filtertext=""><a href="faq/global-config-settings-ignored.html">The global configuration settings i set are being ignored.</a></li>
-
-<li data-section="Questions & Answers" data-filtertext=""><a href="faq/custom-css-is-ignored.html">My custom css is ignored.</a></li>
-
-<li data-role="list-divider">Events</li>
-
-<li data-section="Questions & Answers" data-filtertext=""><a href="faq/swipe-triggered-when-scrolling.html">Swipe triggered when scrolling.</a></li>
-
-<li data-section="Questions & Answers" data-filtertext=""><a href="faq/document-ready-not-working.html">Document ready ignored after first page.</a></li>
-
-<li data-role="list-divider">Theming &amp; custom styles</li>
-
-<li data-section="Questions & Answers" data-filtertext=""><a href="faq/#">How do I add custom icons?</a></li>
-
-<li data-section="Questions & Answers" data-filtertext=""><a href="faq/#">How do I add remove the circle behind the icons?</a></li>
--->
-
-    </ul>
-</div>
-
-	</div><!-- /header -->
-
-	<div data-role="content" class="jqm-content">
-
-			<h1>Transitions</h1>
-
-			<p class="jqm-intro">The jQuery Mobile framework includes a set of CSS-based transition effects that can be applied to any page link or form submission with AJAX navigation.
-			</p>
-
-			<h2>Page transitions</h2>
-
-			<div data-demo-html="true" data-demo-css="true">
-			<table margin="0">
-				<tr>
-					<th><h3>fade</h3></th>
-					<td><a href="page-transitions-dialog.html" data-role="button" data-rel="dialog" data-transition="fade" data-inline="true">dialog</a></td>
-					<td><a href="page-transitions-page.html" data-role="button" data-transition="fade" data-inline="true">page</a></td>
-				</tr>
-				<tr>
-					<th><h3>pop</h3></th>
-					<td><a href="page-transitions-dialog.html" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true">dialog</a></td>
-					<td><a href="page-transitions-page.html" data-role="button" data-transition="pop" data-inline="true">page</a></td>
-				</tr>
-				<tr>
-					<th><h3>flip</h3></th>
-					<td><a href="page-transitions-dialog.html" data-role="button" data-rel="dialog" data-transition="flip" data-inline="true">dialog</a></td>
-					<td><a href="page-transitions-page.html" data-role="button" data-transition="flip" data-inline="true">page</a></td>
-				</tr>
-				<tr>
-					<th><h3>turn</h3></th>
-					<td><a href="page-transitions-dialog.html" data-role="button" data-rel="dialog" data-transition="turn" data-inline="true">dialog</a></td>
-					<td><a href="page-transitions-page.html" data-role="button" data-transition="turn" data-inline="true">page</a></td>
-				</tr>
-				<tr>
-					<th><h3>flow</h3></th>
-					<td><a href="page-transitions-dialog.html" data-role="button" data-rel="dialog" data-transition="flow" data-inline="true">dialog</a></td>
-					<td><a href="page-transitions-page.html" data-role="button" data-transition="flow" data-inline="true">page</a></td>
-				</tr>
-				<tr>
-					<th><h3>slidefade</h3></th>
-					<td><a href="page-transitions-dialog.html" data-role="button" data-rel="dialog" data-transition="slidefade" data-inline="true">dialog</a></td>
-					<td><a href="page-transitions-page.html" data-role="button" data-transition="slidefade" data-inline="true">page</a></td>
-				</tr>
-				<tr>
-					<th><h3>slide</h3></th>
-					<td><a href="page-transitions-dialog.html" data-role="button" data-rel="dialog" data-transition="slide" data-inline="true">dialog</a></td>
-					<td><a href="page-transitions-page.html" data-role="button" data-transition="slide" data-inline="true">page</a></td>
-				</tr>
-				<tr>
-					<th><h3>slideup</h3></th>
-					<td><a href="page-transitions-dialog.html" data-role="button" data-rel="dialog" data-transition="slideup" data-inline="true">dialog</a></td>
-					<td><a href="page-transitions-page.html" data-role="button" data-transition="slideup" data-inline="true">page</a></td>
-				</tr>
-				<tr>
-					<th><h3>slidedown</h3></th>
-					<td><a href="page-transitions-dialog.html" data-role="button" data-rel="dialog" data-transition="slidedown" data-inline="true">dialog</a></td>
-					<td><a href="page-transitions-page.html" data-role="button" data-transition="slidedown" data-inline="true">page</a></td>
-				</tr>
-				<tr>
-					<th><h3>none</h3></th>
-					<td><a href="page-transitions-dialog.html" data-role="button" data-rel="dialog" data-transition="none" data-inline="true">dialog</a></td>
-					<td><a href="page-transitions-page.html" data-role="button" data-transition="none" data-inline="true">page</a></td>
-				</tr>
-			</table>
-			</div><!-- /demo-html -->
-
-	            <p><strong>Important:</strong> Some platforms currently have issues with transitions.
-	                We are working on a solution to solve the problem for everyone.
-	                If you are experiencing flickers and flashes during or at the end of a transition we suggest the following workaround.
-	                Please note that this workaround should be thoroughly tested on the target platform before deployment.
-	                This workaround is known to cause performance issues and browser crashes on some platforms, especially Android.
-	                Add the following code to your custom css.
-	            </p>
-	            <code>
-	                .ui-page { -webkit-backface-visibility: hidden; }
-	            </code>
-
-	<p><strong>Only seeing fade transitions?</strong> To view all transition types, you must be on a browser that supports 3D transforms. By default, devices that lack 3D support (such as Android 2.x) will fallback to "fade" for all transition types. This behavior is configurable (see below).</p>
-
-	<p><strong>Transitions were originally inspired by <a href="http://www.jqtouch.com/">jQtouch</a></strong> They've since been rebuilt, but props to David Kaneda and Jonathan Stark for the initial guidance.</p>
-
-		<h2>Setting a transition</h2>
-		<p>By default, the framework applies a <strong>fade</strong> transition. To set a custom transition effect, add the <code>data-transition</code> attribute to the link. </p>
-
-	<code><code>
-	&lt;a href=&quot;index.html&quot; <strong>data-transition=&quot;pop&quot;</strong>&gt;I'll pop&lt;/a&gt;
-	</code></code>
-
-			<p>When the Back button is pressed, the framework will automatically apply the reverse version of the transition that was used to show the page. To specify that the reverse version of a transition should be used, add the <code>data-direction="reverse"</code> attribute to a link.</p>
-
-			<h2>Global configuration</h2>
-
-			<p>Set the <code>defaultPageTransition</code> global option if you'd prefer a different default transition. Dialogs have a different option called <code>defaultDialogTransition</code> that can also be configured.</p>
-
-			<h2>Browser support</h2>
-			<p>All transitions are built with CSS keyframe animations and include <code>-webkit</code> vendor prefixed rules for iOS, Blackberry, Android, Safari and Chrome browsers, <code>-moz</code> rules for Firefox browsers, and unprefixed rules for Windows Phone 8 and IE10. Support for keyframe animations and transition smoothness is determined by the browser version and hardware and will safely fall back to no transition if animations aren't supported. To proactively exclude transition in situations with poor performance, we exclude browsers that lack 3D transforms and provide a fallback transition and apply a max width for when transitions are applied.</p>
-
-			<h2>Fallback transition</h2>
-			<p>By default, all transitions except fade require 3D transform support. Devices that lack 3D support will fall back to a fade transition, regardless of the transition specified. We do this to proactively exclude poorly-performing platforms like Android 2.x from advanced transitions and ensure they still have a smooth experience. Note that there are platforms such as Android 3.0 that technically support 3D transforms, but still have poor animation performance so this won't guarantee that every browser will be 100% flicker-free but we try to target this responsibly.</p>
-
-			<p>The fallback transition for browsers that don't support 3D transforms can be configured for each transition type, but by default we specify "fade" as the fallback. For example, this will set the fallback transition for the slideout transition to "none":</p>
-			<code>$.mobile.transitionFallbacks.slideout = "none"</code>
-
-			<h2>Max scroll for transitions</h2>
-			<p>By default, transitions are disabled (set to "none") when you're either coming FROM or going TO a page where the scroll position is 3x the height of the device's screen.
-			This feature was added because of the slow response times and the possibility of browser crashing when clicking on a list item (or any navigation element) far down a long page which leads to the
-			browser trying to animate a really massively tall page from the scroll position to the top of the screen. The scroll position, not total screen height, is the determining factor for performance.
-			This scroll position breakpoint is configurable via the new <code>getMaxScrollForTransition</code> function.</p>
-
-			<h2>Max width for transitions</h2>
-			<p>By default, transitions can be disabled (set to "none") when the window width is greater than a certain pixel width. This feature is useful because transitions can be distracting or perform poorly on larger screens. This value is configurable via the global option <code>$.mobile.maxTransitionWidth</code>, which defaults to <code>false</code>. The option accepts any number representing a pixel width or <code>false</code> value. If it's not <code>false</code>, the handler will use a "none" transition when the window is wider than the specified value.</p>
-
-			<h2>Same page transition</h2>
-			<p>Transitions to the current active page are ignored by default but can be enabled by using the <code>allowSamePageTransition</code> option of the <code>$.mobile.changePage</code> method. Note that not all transitions will work as expected and may end in an impractical result. </p>
-
-			<h2>Creating custom transitions</h2>
-			<p>jQuery Mobile allows for the addition of custom transitions to the <code>$.mobile.transitionHandlers</code> dictionary so you can expand the selection of transitions on your site or app.
-
-		</div><!-- /content -->
-
-		<div data-role="footer" class="jqm-footer">
-			<p class="jqm-version"></p>
-			<p>Copyright 2013 The jQuery Foundation</p>
-		</div><!-- /footer -->
-    <div data-role="panel" class="jqm-nav-panel jqm-navmenu-panel" data-position="left" data-display="reveal" data-theme="c">
-        <ul data-role="listview" data-theme="d" data-divider-theme="d" data-icon="false" data-global-nav="demos" class="jqm-list">
-            <li data-role="list-divider">jQuery Mobile Demos</li>
-			<li><a href="./">Home</a></li>
-            <li><a href="intro/">Introduction</a></li>
-            <li><a href="examples/">Demo Showcase</a></li>
-            <li><a href="faq/">Questions & Answers</a></li>
-			<li><a href="intro/rwd.html">Going Responsive</a></li>
-            <li data-role="list-divider">Widget reference</li>
-<li data-section="Widgets" data-filtertext="accordions collapsible sets content formatting grouped inset mini"><a href="widgets/accordions/">Accordion</a></li>
-
-<li data-section="Widgets" data-filtertext="ajax navigation navigate event method"><a href="widgets/navigation/" data-ajax="false">AJAX Navigation</a></li>
-
-<li data-section="Widgets" data-filtertext="autocomplete filter reveal listviews remote listviewbeforefilter placeholder"><a href="widgets/autocomplete/" data-ajax="false">Autocomplete</a></li>
-
-<li data-section="Widgets" data-filtertext="buttons inputs forms inline theme grouped icons mini disabled"><a href="widgets/buttons/" data-ajax="false">Buttons</a></li>
-
-<li data-section="Widgets" data-filtertext="checkboxes checkboxradio inputs forms mini disabled"><a href="widgets/checkbox/">Checkboxes</a></li>
-
-<li data-section="Widgets" data-filtertext="collapsibles content formatting"><a href="widgets/collapsibles/" data-ajax="false">Collapsibles</a></li>
-
-<li data-section="Widgets" data-filtertext="controlgroups selects checkboxradio buttons horizontal vertical"><a href="widgets/controlgroups/">Controlgroup</a></li>
-
-<li data-section="Widgets" data-filtertext="dialogs modal popups"><a href="widgets/dialog/">Dialogs</a></li>
-
-<li data-section="Widgets" data-filtertext="fixed toolbars headers footers sections fullscreen"><a href="widgets/fixed-toolbars/">Fixed toolbars</a></li>
-
-<li data-section="Widgets" data-filtertext="flip toggle switch binary slider selects forms disabled"><a href="widgets/sliders/switch.html" data-ajax="false">Flip switch toggle</a></li>
-
-<li data-section="Widgets" data-filtertext="footer toolbars footers sections"><a href="widgets/footers/">Footer toolbar</a></li>
-
-<li data-section="Widgets" data-filtertext="forms inputs slider button range toggle switch label disabled accessible fieldcontains elements"><a href="widgets/forms/">Form elements</a></li>
-
-<li data-section="Widgets" data-filtertext="grids columns blocks content formatting rwd responsive"><a href="widgets/grids/">Grids</a></li>
-
-<li data-section="Widgets" data-filtertext="header toolbars fixed fullscreen sections"><a href="widgets/headers/">Header toolbar</a></li>
-
-<li data-section="Widgets" data-filtertext="icons buttons disc position"><a href="widgets/icons/">Icons</a></li>
-
-<li data-section="Widgets" data-filtertext="links navigation ajax prefetch cache"><a href="widgets/links/">Links</a></li>
-
-<li data-section="Widgets" data-filtertext="listviews thumbnails icons nested split button collapsible ul ol"><a href="widgets/listviews/" data-ajax="false">Listviews</a></li>
-
-<li data-section="Widgets" data-filtertext="ajax loader overlay spinner pages"><a href="widgets/loader/" data-ajax="false">Loader overlay</a></li>
-
-<li data-section="Widgets" data-filtertext="navbars navmenu toolbars links icons footer header"><a href="widgets/navbar/" data-ajax="false">Navbar</a></li>
-
-<li data-section="Widgets" data-filtertext="navbars persistent header footer links navmenu"><a href="widgets/fixed-toolbars/footer-persist-a.html">Navbar, persistent</a></li>
-
-<li data-section="Widgets" data-filtertext="pages single multipage templates ajax nav"><a href="widgets/pages/">Pages</a></li>
-
-<li data-section="Widgets" data-filtertext="panels sliding nav modal transition display reveal overlay push rwd responsive"><a href="widgets/panels/">Panels <span class="ui-li-count">New</span></a></li>
-
-<li data-section="Widgets" data-filtertext="popup dialog modal transition tooltip lightbox form overlay screen flip pop fade transition"><a href="widgets/popup/">Popup</a></li>
-
-<li data-section="Widgets" data-filtertext="radiobuttons checkboxradio inputs forms disabled grouped"><a href="widgets/radiobuttons/">Radio buttons</a></li>
-
-<li data-section="Widgets" data-filtertext="selectmenus custom native multiple optgroup disabled forms"><a href="widgets/selects/">Select</a></li>
-
-<li data-section="Widgets" data-filtertext="slider, single sliders range inputs forms disabled"><a href="widgets/sliders/" data-ajax="false">Slider, single</a></li>
-
-<li data-section="Widgets" data-filtertext="slider, dual range sliders rangesliders inputs forms disabled"><a href="widgets/sliders/rangeslider.html" data-ajax="false">Slider, dual range <span class="ui-li-count">New</span></a></li>
-
-<li data-section="Widgets" data-filtertext="tables column th td toggle responsive tables rwd hide show tabular"><a href="widgets/table-column-toggle/">Table, column toggle <span class="ui-li-count">New</span></a></li>
-
-<li data-section="Widgets" data-filtertext="tables reflow th td responsive rwd columns tabular"><a href="widgets/table-reflow/">Table, reflow <span class="ui-li-count">New</span></a></li>
-
-<li data-section="Widgets" data-filtertext="text inputs textarea numeric email tel file date time month clear pattern placeholder forms"><a href="widgets/textinputs/">Text inputs & textarea</a></li>
-
-<li data-section="Widgets" data-filtertext="page transitions animated pages ajax navigation flip slide fade pop" data-ajax="false"><a href="widgets/transitions/" data-ajax="false">Transitions</a></li>
-
-        </ul>
-	</div><!-- /panel -->
-
-
-	</div><!-- /page -->
-	</body>
-	</html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>jQTouch &beta;</title>
+        <link rel="stylesheet" href="css/jqtouch.min.css" data-jqt-theme>
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jqt.min.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="js/jqt.themeswitcher.min.js" type="application/x-javascript" charset="utf-8"></script>
+        <script src="js/jqt.actionsheet.min.js" type="application/x-javascript" charset="utf-8"></script>
+        <script src="js/jqt.menusheet.min.js" type="application/x-javascript" charset="utf-8"></script>
+
+        <script type="text/javascript" charset="utf-8">
+            var jQT = new $.jQT({
+                icon: 'jqtouch.png',
+                icon4: 'jqtouch4.png',
+                addGlossToIcon: false,
+                startupScreen: 'jqt_startup.png',
+                statusBar: 'black-translucent',
+                preloadImages: []
+            });
+
+            // Some sample Javascript functions:
+            $(function(){
+
+                // Show a swipe event on swipe test
+                $('#swipeme').swipe(function(evt, data) {
+                    var details = !data ? '': '<strong>' + data.direction + '/' + data.deltaX +':' + data.deltaY + '</strong>!';
+                    $(this).html('You swiped ' + details );
+                    $(this).parent().after('<li>swiped!</li>')
+                });
+
+                $('#tapme').tap(function(){
+                    $(this).parent().after('<li>tapped!</li>')
+                });
+
+                $('a[target="_blank"]').bind('click', function() {
+                    if (confirm('This link opens in a new window.')) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                });
+
+                // Page animation callback events
+                $('#pageevents').
+                    bind('pageAnimationStart', function(e, info){ 
+                        $(this).find('.info').append('Started animating ' + info.direction + '&hellip;  And the link ' +
+                            'had this custom data: ' + $(this).data('referrer').data('custom') + '<br>');
+                    }).
+                    bind('pageAnimationEnd', function(e, info){
+                        $(this).find('.info').append('Finished animating ' + info.direction + '.<br><br>');
+
+                    });
+                
+                // Page animations end with AJAX callback event, example 1 (load remote HTML only first time)
+                $('#callback').bind('pageAnimationEnd', function(e, info){
+
+                    // Make sure the data hasn't already been loaded (we'll set 'loaded' to true a couple lines further down)
+                    if (!$(this).data('loaded')) {
+                        
+                        // Append a placeholder in case the remote HTML takes its sweet time making it back
+                        // Then, overwrite the "Loading" placeholder text with the remote HTML
+                        $(this).append($('<div>Loading</div>').load('ajax.html .info', function() {        
+                            // Set the 'loaded' var to true so we know not to reload
+                            // the HTML next time the #callback div animation ends
+                            $(this).parent().data('loaded', true);  
+                        }));
+                    }
+                });
+                // Orientation callback event
+                $('#jqt').bind('turn', function(e, data){
+                    $('#orient').html('Orientation: ' + data.orientation);
+                });
+                
+            });
+        </script>
+        <style type="text/css" media="screen">
+            #jqt.fullscreen #home .info {
+                display: none;
+            }
+            div#jqt #about {
+                padding: 100px 10px 40px;
+                text-shadow: rgba(0, 0, 0, 0.3) 0px -1px 0;
+                color: #999;
+                font-size: 13px;
+                text-align: center;
+                background: #161618;
+            }
+            div#jqt #about p {
+                margin-bottom: 8px;
+            }
+            div#jqt #about a {
+                color: #fff;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="jqt" class="">
+            <div id="about" class="selectable">
+                <p><img src="jqtouch.png" /></p>
+                <p><strong>jQTouch</strong><br>Version 1.0 beta<br>
+                    <a href="http://www.davidkaneda.com">By David Kaneda</a></p>
+                <p><em>Create powerful mobile apps with<br> just HTML, CSS, and jQuery.</em></p>
+                <p>
+                    <a target="_blank" href="http://twitter.com/jqtouch">@jQTouch on Twitter</a>
+                </p>
+                <p><br><br><a href="#" class="grayButton goback">Close</a></p>
+            </div>
+            <div id="ajax">
+                <div class="toolbar">
+                    <h1>AJAX</h1>
+                    <a class="back" href="#home">Home</a>
+                </div>
+                <div class="scroll">
+                    <ul class="rounded">
+                        <li class="arrow"><a href="#ajax_post">POST Form Example</a></li>
+                        <li class="arrow"><a href="ajax.html">GET Example</a></li>
+                        <li class="arrow"><a href="ajax_long.html">Long GET Example</a></li>
+                        <li class="arrow"><a href="#callback">With Callback</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="animations">
+                <div class="toolbar">
+                    <h1>Animations</h1>
+                    <a class="back" href="#">Home</a>
+                </div>
+                <div class="scroll">
+                    <h2>Most Popular</h2>
+                    <ul class="rounded">
+                        <li><a href="#animdemo">Slide</a></li>
+                        <li><a href="#animdemo" class="slideup">Slide Up</a></li>
+                        <li><a href="#animdemo" class="dissolve">Dissolve</a></li>
+                        <li><a href="#animdemo" class="pop">Pop</a></li>
+                    </ul>
+                    <h2>3d Transitions</h2>
+                    <ul class="rounded">
+                        <li><a href="#animdemo" class="flipright">Flip right</a></li>
+                        <li><a href="#animdemo" class="flipleft">Flip left</a></li>
+                        <li><a href="#animdemo" class="cube">Cube</a></li>
+                        <li><a href="#animdemo" class="swap">Swap</a></li>
+                    </ul>
+                </div>
+                <div class="info">
+                    Custom animations are also <a target="_blank" href="http://code.google.com/p/jqtouch/wiki/Animations">easy to write</a>. <br>View the source in <code>demos/customanimation</code> to see how.
+                </div>
+            </div>
+            <div id="animdemo">
+                <div style="font-size: 1.5em; text-align: center; margin: 160px 0 90px; font-family: Marker felt;">
+                    Pretty smooth, eh?            
+                </div>
+                <a style="margin-bottom: 120px;color:rgba(0,0,0,.9)" href="#" class="whiteButton goback">Go back</a>
+            </div>
+            <div id="buttons">
+                <div class="toolbar">
+                    <h1>Buttons!</h1>
+                    <a href="#" class="back">Home</a>
+                </div>
+                <div style="margin-top: 10px;" class="scroll">
+                    <a href="#" class="whiteButton">White</a>
+                    <br>
+                    <a href="#" class="grayButton">Gray</a>
+                    <br>
+                    <a href="#" class="redButton">Red</a>
+                    <br>
+                    <a href="#" class="greenButton">Green</a>
+                    <br>
+                    <a href="#" class="blueButton">Blue</a>
+                </div>
+            </div>
+            <div id="callback">
+                <div class="toolbar">
+                    <h1>AJAX w/Callback</h1>
+                    <a class="back" href="#">Ajax</a>
+                </div>
+            </div>
+            <div id="callbacks">
+                <div class="toolbar">
+                    <h1>Events</h1>
+                    <a class="back" href="#home">Home</a>
+                </div>
+                <div class="scroll">
+                    <ul class="rounded">
+                        <li id="orient">Orientation: <strong>portrait</strong></li>
+                        <li><a href="#pageevents" data-custom="WOOT!">Page events</a></li>
+                        <li><a href="#" id="swipeme">Swipe me!</a></li>
+                        <li><a href="#" id="tapme">Tap me!</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="demos">
+                <div class="toolbar">
+                    <h1>Demos</h1>
+                    <a class="back" href="#home">Home</a>
+                </div>
+                <div class="scroll">
+                    <ul class="rounded">
+                        <li class="forward"><a target="_blank" href="../todo/index.html">To-Do app</a></li>
+                        <li class="forward"><a target="_blank" href="../clock/index.html">Clock app</a></li>
+                    </ul>
+                </div>
+                <div class="info">
+                     These apps open in a new window. Don&#8217;t forget to save them to your home screen to enable full-screen mode.
+                 </div>
+            </div>
+            <div id="edge">
+                <div class="toolbar">
+                    <h1>Edge to Edge</h1>
+                    <a href="#" class="back">Back</a>
+                </div>
+                <ul class="edgetoedge scroll">
+                    <li class="sep">F</li>
+                    <li><a href="#">Flintstone, <em>Fred</em> <small>Label</small></a></li>
+                    <li><a href="#">Flintstone, <em>Pebble</em> <small class="counter">42</small></a></li>
+                    <li><a href="#">Flintstone, <em>Wilma</em></a></li>
+                    <li class="sep">J</li>
+                    <li class="arrow"><a href="#">Jetson, <em>Elroy</em> <small>Label</small></a></li>
+                    <li class="arrow"><a href="#">Jetson, <em>George</em> <small class="counter">42</small></a></li>
+                    <li class="arrow"><a href="#">Jetson, <em>Jane</em></a></li>
+                    <li class="arrow"><a href="#">Jetson, <em>Judy</em></a></li>
+                    <li class="sep">R</li>
+                    <li class="forward"><a href="#">Rubble, <em>Bambam</em> <small>Label</small></a></li>
+                    <li class="forward"><a href="#">Rubble, <em>Barney</em> <small class="counter">42</small></a></li>
+                    <li class="forward"><a href="#">Rubble, <em>Betty</em></a></li>
+                </ul>
+            </div>
+            <div id="themes">
+                <div class="toolbar">
+                    <h1>Themes</h1>
+                    
+                    <a href="#" class="back">Back</a>
+                </div>
+                <ul class="rounded">
+                    <li><a data-stylesheet-title="jqtouch" data-switch-stylesheet="../../themes/css/jqtouch.min.css" class="selected" href="#">jQTouch</a></li>
+                    <li><a data-stylesheet-title="innsbruck" data-switch-stylesheet="../../themes/css/innsbruck.min.css" href="#">iOS 7</a></li>
+                    <li><a data-stylesheet-title="vanilla" data-switch-stylesheet="../../themes/css/vanilla.min.css" href="#">Vanilla</a></li>
+                    <li><a data-stylesheet-title="apple" data-switch-stylesheet="../../themes/css/apple.min.css" href="#">Apple</a></li>
+                </ul>
+            </div>
+            <div id="extensions">
+                <div class="toolbar">
+                    <h1>Extensions</h1>
+                    <a class="back" href="#home">Home</a>
+                </div>
+                <div class="scroll">
+                    <div class="info">
+                        These apps open in a new window. Don&#8217;t forget to save them to your home screen to enable full-screen mode.
+                    </div>
+                    <ul class="rounded">
+                        <li class="forward"><a target="_blank" href="../ext_location/index.html">Geo Location</a></li>
+                        <li class="forward"><a target="_blank" href="../ext_offline/index.html">Offline Utility</a></li>
+                        <li class="forward"><a target="_blank" href="../ext_floaty/index.html">Floaty Bar</a></li>
+                        <li class="forward"><a target="_blank" href="../ext_autotitles/index.html">Auto Titles</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="forms">
+                <div class="toolbar">
+                    <h1>Forms</h1>
+                    <a href="#" class="back">Back</a>
+                </div>
+                <form class="scroll">
+                    <ul class="edit rounded">
+                        <li><input type="text" name="name" placeholder="Text" id="some_name" /></li>
+                        <li><input type="search" name="search" placeholder="Search" id="some_name" /></li>
+                        <li><input type="tel" name="phone" placeholder="Phone" id="some_name"  /></li>
+                        <li><input type="number" pattern="[0-9]*" name="number" placeholder="Numbers" id="some_name" /></li>
+                        <li><input type="number" name="zip" placeholder="Numbers 2" id="some_name" /></li>
+                        <li><input type="email" name="email" placeholder="Email" id="some_name" /></li>
+                        <li><input type="url" name="url" placeholder="Url" id="some_name" /></li>
+                        <li><textarea placeholder="Textarea" ></textarea></li>
+                        <li>Sample Toggle <span class="toggle"><input type="checkbox" /></span></li>
+                        <li>Toggle Style 2<input type="checkbox" class="toggle"/></li>
+                        <li class="arrow">
+                            <select id="lol">
+                                <optgroup label="Swedish Cars">
+                                    <option value ="volvo">Volvo</option>
+                                    <option value ="saab">Saab</option>
+                                </optgroup>
+                                <optgroup label="German Cars">
+                                    <option value ="mercedes">Mercedes</option>
+                                    <option value ="audi">Audi</option>
+                                </optgroup>
+                            </select>
+                        </li>
+                        <li><input type="password" name="some_name" value="iphonedelcopon" id="some_name" /></li>
+                        <li><input type="checkbox" name="food" value="punch" title="Punch" /></li>
+                        <li><input type="checkbox" name="food" value="pie" checked="checked" title="Pie" /></li>
+                        <li><input type="radio" name="bag" value="paper" title="Paper" /></li>
+                        <li><input type="radio" name="bag" value="plastic" title="Plastic" /></li>
+                    </ul>
+                </form>
+            </div>
+            <div id="home" class="current">
+                <div class="toolbar">
+                    <h1>jQTouch</h1>
+                    <a class="button slideup" id="infoButton" href="#about">About</a>
+                </div>
+                <div class="scroll">
+                    <ul class="rounded">
+                        <li class="arrow"><a href="#ui">User Interface <small class="counter">5</small></a> </li>
+                        <li class="arrow"><a href="#animations">Animations <small class="counter">7</small></a></li>
+                        <li class="arrow"><a href="#ajax">AJAX <small class="counter">4</small></a></li>
+                        <li class="arrow"><a href="#callbacks">Events <small class="counter">4</small></a></li>
+                        <li class="arrow"><a href="#extensions">Extensions <small class="counter">4</small></a> </li>
+                        <li class="arrow"><a href="#demos">Demos <small class="counter">2</small></a></li>
+                        <li class="arrow"><a href="#themes">Themes <small class="counter">4</small></a></li>
+                    </ul>
+                    <h2>External Links</h2>
+                    <ul class="rounded">
+                        <li class="forward"><a target="_blank" href="http://www.jqtouch.com/">Homepage</a></li>
+                        <li class="forward"><a target="_blank" href="http://twitter.com/#!/jqtouch">Twitter</a></li>
+                        <li class="forward"><a target="_blank" href="http://github.com/senchalabs/jQTouch">GitHub</a></li>
+                    </ul>
+                    <ul class="individual">
+                        <li><a target="_blank" href="http://twitter.com/davidkaneda">@davidkaneda</a></li>
+                        <li><a target="_blank" href="http://twitter.com/beedesk">@beedesk</a></li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <p>Add this page to your home screen <br>for a richer experience.</p>
+                </div>
+            </div>
+            <div id="metal">
+                <div class="toolbar">
+                    <h1>Metal Lists</h1>
+                    <a href="#" class="back">Back</a>
+                </div>
+                <ul class="metal scroll">
+                    <li class="arrow"><a href="#"><small>AM</small> 9:40 <em>Buenos Aires</em></a></li>
+                    <li class="arrow"><a href="#"><small>PM</small> 19:40 <em>Singapore</em></a></li>
+                    <li class="arrow"><a href="#"><small>PM</small> 22:40 <em>Japan</em></a></li>
+                    <li class="arrow"><a href="#"><small>PM</small> 11:40 <em>New York</em></a></li>
+                    <li class="arrow"><a href="#"><small>PM</small> 9:40 <em>Ontario</em></a></li>
+                </ul>
+            </div>
+            <div id="pageevents">
+                <div class="toolbar">
+                    <h1>Page Events</h1>
+                    <a class="back" href="#">Events</a>
+                </div>
+                <div class="info scroll" style="font-weight: normal;">
+                </div>
+            </div>
+            <div id="plastic">
+                <div class="toolbar">
+                    <h1>Plastic Lists</h1>
+                    <a href="#" class="back">Back</a>
+                </div>
+                <ul class="plastic scroll">
+                    <li class="arrow"><a href="#">Simple list <small>Label</small></a></li>
+                    <li class="arrow"><a href="#">Contact list <small class="counter">42</small></a></li>
+                    <li class="forward"><a href="#">Content List</a></li>
+                    <li><a href="#">Metal list</a></li>
+                </ul>
+            </div>
+            <div id="ui">
+                <div class="toolbar">
+                    <h1>UI Demos</h1>
+                    <a class="back" href="#">Home</a>
+                </div>
+                <div class="scroll">
+                    <h2>Lists</h2>
+                    <ul class="rounded">
+                        <li class="arrow"><a href="#edge">Edge to Edge</a></li>
+                        <li class="arrow"><a href="#plastic">Plastic</a></li>
+                        <li class="arrow"><a href="#metal">Metal</a></li>
+                    </ul>
+                    <h2>Buttons</h2>
+                    <ul class="rounded">
+                        <li class="arrow"><a href="#buttons">Buttons</a></li>
+                    </ul>
+                    <h2>Forms</h2>
+                    <ul class="rounded">
+                        <li class="arrow"><a href="#forms">Forms</a></li>
+                    </ul>
+                    <h2>Sheets</h2>
+                    <ul class="rounded">
+                        <li class="arrow"><a class="action" href="#actionsheet">Action</a></li>
+                        <li class="arrow"><a class="menu" href="#menusheet">Menu</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="actionsheet" class="actionsheet">
+                <div class="actionchoices">
+                    <fieldset>
+                        <div>What would you like to do with this link?</div>
+                        <a href="#action_performed" class="whiteButton">Open in Safari</a>
+                        <a href="#action_performed" class="whiteButton">Add to Reading List</a>
+                        <a href="#action_performed" class="whiteButton caution">Delete</a>
+                    </fieldset>
+                    <a href="#" class="redButton dismiss">Cancel</a>
+                </div>
+            </div>
+            <div id="action_performed">
+                <div class="toolbar">
+                    <h1>Action</h1>
+                    <a class="back" href="#">Back</a>
+                </div>
+                <div class="info">
+                    <p>You performed an action.</p>
+                </div>
+            </div>
+            <div id="menusheet" class="menusheet">
+                <ul class="edgetoedge scroll">
+                    <li><a href="#" class="dismiss">jQTouch</a></li>
+                    <li class="sep">Favorites</li>
+                    <li><a href="#edge" class="dissolve">Edge to Edge</a></li>
+                    <li><a href="#plastic" class="dissolve">Plastic</a></li>
+                    <li><a href="#metal" class="dissolve">Metal</a></li>
+                </ul>
+            </div>
+            <form id="ajax_post" action="ajax_post.php" method="POST" class="form">
+                <div class="toolbar">
+                    <h1>Post Demo</h1>
+                    <a class="back" href="#">Ajax</a>
+                </div>
+                <div class="scroll">
+                    <ul class="rounded">
+                        <li><input type="text" name="zip" value="" placeholder="Zip Code" /></li>
+                    </ul>
+                    <h2>Favorite color?</h2>
+                    <ul class="rounded">
+                        <li><input type="radio" name="color" value="green" title="Green" /></li>
+                        <li><input type="radio" name="color" value="blue" title="Blue" /></li>
+                        <li><input type="radio" name="color" value="red" title="Red" /></li>
+                    </ul>
+                    <a style="margin-top: 10px; margin-bottom: 10px; color:rgba(0,0,0,.9)" href="#" class="submit whiteButton">Submit</a>
+                </div>
+            </form>
+        </div>
+    </body>
+    <script>
+      if (window.navigator.standalone) {
+        $("meta[name='apple-mobile-web-app-status-bar-style']").remove();
+      }
+    </script>
+</html>
