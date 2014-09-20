@@ -1,55 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<!-- index -->
-<link rel="stylesheet" href="css/index.css">
-<!-- index -->
-<!-- menulist -->
-<link rel="stylesheet" href="css/idangerous.swiper.css">
-<link rel="stylesheet" href="css/idangerous.swiper.scrollbar.css">
-<link rel="stylesheet" href="css/menulist.css">
-<!-- menulist -->
+<meta charset="utf-8">
+<title>jQuery &amp; CSS3 Full Page Intro &amp; Navigation Demo</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<script src='js/modernizr.js'></script>
 </head>
+
 <body>
-<!-- header -->
-<div class="topoption">
-<div class="search2">Search</div>
-<div class="my2">My</div>
-</div>
-<div class="headerhidden2"></div>
-<!-- header -->
-<div class="swiper-scrollbar"></div>
-<!-- menulist -->
-<div class="swiper-container">
-<div class="swiper-wrapper">
-<div class="swiper-slide">
-1
-</div>
-<div class="swiper-slide">
-2
-</div>
-</div>
-</div>
-<!-- menulist -->
-<!-- options -->
-<div class="footoption">
-<div class="search"><input type="text" value="Search"/></div>
-<div class="my">Search</div>
-</div>
-<!-- options -->
-<!-- menulist -->
-<script src="js/idangerous.swiper.js"></script>
-<script src="js/idangerous.swiper.scrollbar.js"></script>
-<script src="js/menulist.js"></script>
-<script src="js/index.js"></script>
-<!-- menulist -->
-<!-- scroll -->
-<script>
-$("body").css({overflow:'hidden'}).bind('touchmove', function(e){e.preventDefault()});
+<main id="cd-main-content">
+  <section id="cd-intro">
+    <h1>jQuery & CSS3 Full Page Intro & Navigation Demo</h1>
+    <div class="jquery-script-ads" align="center"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
 </script>
-<!-- scroll -->
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+    <header class="cd-header"> <a class="cd-menu-trigger" href="#main-nav">Menu<span></span></a> </header>
+    <div class="cd-blurred-bg"></div>
+  </section>
+  <!-- cd-intro --> 
+</main>
+<div class="cd-shadow-layer"></div>
+<nav id="main-nav">
+  <ul>
+    <li><a href="#0"><span>Tour</span></a></li>
+    <li><a href="#0"><span>Pricing</span></a></li>
+    <li><a href="#0"><span>Labs</span></a></li>
+    <li><a href="#0"><span>About</span></a></li>
+    <li><a href="#0"><span>Contact us</span></a></li>
+  </ul>
+  <a href="#" class="cd-close-menu">Close<span></span></a> 
+</nav>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script>
+jQuery(document).ready(function($){
+	//open menu
+	$('.cd-menu-trigger').on('click', function(event){
+		event.preventDefault();
+		$('#cd-main-content').addClass('move-out');
+		$('#main-nav').addClass('is-visible');
+		$('.cd-shadow-layer').addClass('is-visible');
+	});
+	//close menu
+	$('.cd-close-menu').on('click', function(event){
+		event.preventDefault();
+		$('#cd-main-content').removeClass('move-out');
+		$('#main-nav').removeClass('is-visible');
+		$('.cd-shadow-layer').removeClass('is-visible');
+	});
+
+	//clipped image - blur effect
+	set_clip_property();
+	$(window).on('resize', function(){
+		set_clip_property();
+	});
+
+	function set_clip_property() {
+		var $header_height = $('.cd-header').height(),
+			$window_height = $(window).height(),
+			$header_top = $window_height - $header_height,
+			$window_width = $(window).width();
+		$('.cd-blurred-bg').css('clip', 'rect('+$header_top+'px, '+$window_width+'px, '+$window_height+'px, 0px)');
+	}
+});
+</script>
 </body>
 </html>
