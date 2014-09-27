@@ -1,30 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
 <head>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.touchSwipe.min.js"></script>
-<style>
-html, body{
-width: 100%;
-height: 100%;	
-margin: 0px;
-}
-#fadeshow4 .gallerylayer img{ /* make all images inside fadeshow4 scale to 100% of slideshow width */
-width: 100%;
-height: 100%;	
-margin: 0px;
-}
-</style>
-<script type="text/javascript" src="fadeslideshow.js">
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- index -->
+<link rel="stylesheet" href="css/index.css">
+<!-- index -->
+<!-- menulist -->
+<link rel="stylesheet" href="css/idangerous.swiper.css">
+<link rel="stylesheet" href="css/idangerous.swiper.scrollbar.css">
+<link rel="stylesheet" href="css/menulist.css">
+<!-- menulist -->
+<!-- img -->
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/fadeslideshow.js">
 </script>
 <script type="text/javascript">
 var mygallery4=new fadeSlideShow({
 	wrapperid: "fadeshow4", //ID of blank DIV on page to house Slideshow
-	dimensions: ['100%', '30%'], //width/height of gallery in pixels. Should reflect dimensions of largest image
+	dimensions: ['100%', '100%'], //width/height of gallery in pixels. Should reflect dimensions of largest image
 	imagearray: [
-		["http://www.dynamicdrive.com/dynamicindex14/shockwave/images/1.jpg", "", "", "There is beauty to be found in nature not just in grand landscapes, but in the petals of an unassuming flower"],
-		["http://www.dynamicdrive.com/dynamicindex14/shockwave/images/3.jpg", "", "", "The iconic telephone booths of London now in a very unfamiliar place."],
-		["http://www.dynamicdrive.com/dynamicindex14/shockwave/images/7.jpg", "", "", "A piano not played is a piano that's wasting away. "],
-		["http://www.dynamicdrive.com/dynamicindex14/shockwave/images/4.jpg", "", "", "Alone and being lonely. It's a state of mind. Which one does this image evoke in you?"] //<--no trailing comma after very last image element!
+		["img/1.jpg", "", "", "There is beauty to be found in nature not just in grand landscapes, but in the petals of an unassuming flower"],
+		["img/2.jpg", "", "", "The iconic telephone booths of London now in a very unfamiliar place."],
+		["img/3.jpg", "", "", "A piano not played is a piano that's wasting away. "],
+		["img/4.jpg", "", "", "Alone and being lonely. It's a state of mind. Which one does this image evoke in you?"], //<--no trailing comma after very last image element!
+		["img/5.jpg", "", "", "A piano not played is a piano that's wasting away. "],
+		["img/6.jpg", "", "", "A piano not played is a piano that's wasting away. "]
 	],
 	displaymode: {type:'auto', pause:3000, cycles:0, wraparound:false},
 	persist: false, //remember last viewed slide and recall within same session?
@@ -33,11 +35,85 @@ var mygallery4=new fadeSlideShow({
 	togglerid: "fadeshow4toggler"
 })
 </script>
+<!-- img -->
 </head>
 <body>
-<div id="fadeshow4"></div>
-<div id="fadeshow4toggler" style="width:100%; text-align:center;">
-<span class="status" style="margin:0 50px; font-weight:bold"></span>
+<!-- header -->
+<div class="header">
+<div class="app">
+<div class="mainlist">Food</div>
+<div class="mainlist">Dessert</div>
+<div class="mainlist">Bar</div>
+<div class="mainlist">Life</div>
 </div>
+</div>
+<div class="headerhidden"></div>
+<!-- header -->
+<div class="swiper-scrollbar"></div>
+<!-- middle -->
+<div class="middle">
+<!-- menubar -->
+<div class="menubar">
+<div class="menubarcontainer">
+<div class="topmenubar">
+<div class="category c1">자장면</div>
+<div class="category c2">자장면</div>
+<div class="category c3">자장면</div>
+<div class="category c4">자장면</div>
+</div>
+</div>
+<div class="menubarcontainer2">
+<div class="topmenubar2">
+<div class="category c5">자장면</div>
+<div class="category c6">자장면</div>
+<div class="category c7">자장면</div>
+<div class="category c8">자장면</div>
+</div>
+</div>
+</div>
+<div class="menubarhidden"></div>
+<!-- menubar -->
+<!-- img -->
+<div class="container">
+<div class="block">
+<div id="fadeshow4"></div>
+<div id="fadeshow4toggler" style="width:100%; text-align:right;">
+<span class="status"></span>
+</div>
+</div>
+</div>
+<!-- img -->
+<!-- menulist -->
+<div class="swiper-container">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div>외식1</div><div>외식2</div><div>외식3</div><div>외식4</div><div>외식5</div><div>외식6</div><div>외식6</div><div>외식6</div><div>외식6</div><div>외식6</div><div>외식6</div>
+</div>
+<div class="swiper-slide">
+<div>디저트1</div><div>디저트2</div><div>디저트3</div><div>디저트4</div><div>디저트5</div><div>디저트</div><div>디저트</div><div>외식6</div><div>외식6</div><div>외식6</div><div>외식6</div>
+</div>
+<div class="swiper-slide">
+<div>주류1</div><div>주류2</div><div>주류3</div><div>주류4</div><div>주류5</div><div>주류6</div><div>주류6</div><div>외식6</div><div>외식6</div><div>외식6</div><div>외식6</div>
+</div>
+<div class="swiper-slide">
+<div>생활1</div><div>생활2</div><div>생활3</div><div>생활4</div><div>생활5</div><div>외식6</div><div>외식6</div><div>외식6</div><div>외식6</div><div>외식6</div><div>외식6</div>
+</div>
+</div>
+</div>
+<!-- menulist -->
+</div>
+<!-- middle -->
+<!-- options -->
+<div class="footoption">
+<div class="search"><a href="index11.html">Search</a></div>
+<div class="my"><a href="index11.html">My</a></div>
+</div>
+<!-- options -->
+<!-- menulist -->
+<script src="js/idangerous.swiper.js"></script>
+<script src="js/idangerous.swiper.scrollbar.js"></script>
+<script src="js/menulist.js"></script>
+<script src="js/index.js"></script>
+<!-- menulist -->
 </body>
 </html>

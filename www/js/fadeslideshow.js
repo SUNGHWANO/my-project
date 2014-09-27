@@ -1,23 +1,8 @@
-/* Ultimate Fade-in slideshow (v2.6)
-* Last updated: May 24th, 2010. This notice must stay intact for usage 
-* Author: Dynamic Drive at http://www.dynamicdrive.com/
-* Visit http://www.dynamicdrive.com/ for full source code
-*/
-
-//Oct 6th, 09' (v2.1): Adds option to randomize display order of images, via new option displaymode.randomize
-//May 24th, 10' (v2.4): Adds new "peakaboo" option to "descreveal" setting. oninit and onslide event handlers added.
-//June 22nd, 14' (v2.6): 1) Slideshow now responsive, supporting percentage values in the dimensions[w, h] option. 2) Swipe to navigate added on both desktop and mobile devices. 
-//June 22nd, 14' (v2.6.1): Enabled vertical swiping inside slideshow to scroll page 
-
 var fadeSlideShow_descpanel={
 	controls: [['x.png', 8, 8], ['restore.png', 14, 15.5], ['loading.gif', 54, 55]], //full URL and dimensions of close, restore, and loading images
 	fontStyle: 'normal 11px Verdana', //font style for text descriptions
 	slidespeed: 200 //speed of description panel animation (in millisec)
 }
-
-//No need to edit beyond here...
-
-jQuery.noConflict()
 
 function fadeSlideShow(settingarg){
 	this.setting=settingarg
@@ -43,7 +28,6 @@ function fadeSlideShow(settingarg){
 			setting.longestdesc=setting.imagearray[i][3]
 	}
 	var closebutt=fadeSlideShow_descpanel.controls[0] //add close button to "desc" panel if descreveal="always"
-	setting.closebutton=(setting.descreveal=="always")? '<img class="close" src="'+closebutt[0]+'" style="float:right;cursor:hand;cursor:pointer;width:'+closebutt[1]+'px;height:'+closebutt[2]+'px;margin-left:2px" title="Hide Description" />' : ''
 	var slideshow=this
 	jQuery(document).ready(function($){ //fire on DOM ready
 		var setting=slideshow.setting
