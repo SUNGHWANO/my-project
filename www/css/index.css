@@ -1,9 +1,9 @@
-html, body{margin:0px;height:100%;width:100%;background-color:#FFFFFF;top:0;}
+html, body{margin:0px;height:100%;width:100%;background-color:#FFFFFF;}
 /* header */
-.header{z-index:9999;display:table;width:100%;height:8%;background-color:white;position:fixed;top:0px;font-family:Arial,Helvetica,sans-serif;margin:0px;}
-.app{display:table-cell;text-align:center;vertical-align:middle;margin:0px;height:8%;top:0px;}
-.mainlist{width:25%;float:left;color:rgba(0,0,0,0.5);font-size:13px;font-weight:bold;top:0px;}
-.headerhidden{width:100%;height:8%;margin:0px;border-bottom:1px solid #E6E6E6;top:0px;}
+.header{z-index:1;display:table;width:100%;height:8%;background-color:white;position:fixed;top:0px;font-family:Arial,Helvetica,sans-serif;}
+.app{display:table-cell;text-align:center;vertical-align:middle;margin:0px;height:8%;}
+.mainlist{width:25%;float:left;color:rgba(0,0,0,0.5);font-size:13px;font-weight:bold;}
+.headerhidden{width:100%;height:8%;margin:0px;border-bottom:1px solid #E6E6E6;}
 /* header */
 /* middle */
 .middle{height:92%;width:100%;margin:0px;}
@@ -11,9 +11,6 @@ html, body{margin:0px;height:100%;width:100%;background-color:#FFFFFF;top:0;}
 /* img */
 .container{width:100%;height:32%;background-color:#FAFAFA;margin:0px;z-index:99999;}
 .block{width:100%;height:100%;margin:0 auto;}
-#fadeshow4 .gallerylayer img{width:100%;height:100%;margin:0px;}
-#fadeshow4toggler{position:absolute;margin-top:-20px;z-index:9999;color:white;}
-.status{margin-right:5px;}
 /* img */
 /* menubar */
 .menubar{top:8%;width:100%;height:12%;border-top:4px solid white;border-bottom:1px solid #E6E6E6;font-family:Arial,Helvetica,sans-serif;color:#BDBDBD;font-size:13px;}
@@ -24,7 +21,6 @@ html, body{margin:0px;height:100%;width:100%;background-color:#FFFFFF;top:0;}
 .topmenubar2{width:100%;font-weight:bold;margin:0px;display:table-cell;text-align:center;vertical-align:middle;}
 .c5,.c6,.c7,.c8{width:25%;float:left;}
 /* menubar */
-
 
 
 

@@ -17,7 +17,7 @@ var fadeSlideShow_descpanel={
 
 //No need to edit beyond here...
 
-jQuery.noConflict()
+//jQuery.noConflict()
 
 function fadeSlideShow(settingarg){
 	this.setting=settingarg
