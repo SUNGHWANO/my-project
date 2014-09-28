@@ -17,22 +17,20 @@
 <script src="js/fadeslideshow.js">
 </script>
 <script type="text/javascript">
-var mygallery4=new fadeSlideShow({
-	wrapperid: "fadeshow4", //ID of blank DIV on page to house Slideshow
-	dimensions: ['100%', '100%'], //width/height of gallery in pixels. Should reflect dimensions of largest image
+var mygallery=new fadeSlideShow({
+	wrapperid: "fadeshow1", //ID of blank DIV on page to house Slideshow
+	dimensions: [250, 180], //width/height of gallery in pixels. Should reflect dimensions of largest image
 	imagearray: [
-		["img/1.jpg", "", "", "There is beauty to be found in nature not just in grand landscapes, but in the petals of an unassuming flower"],
-		["img/2.jpg", "", "", "The iconic telephone booths of London now in a very unfamiliar place."],
-		["img/3.jpg", "", "", "A piano not played is a piano that's wasting away. "],
-		["img/4.jpg", "", "", "Alone and being lonely. It's a state of mind. Which one does this image evoke in you?"], //<--no trailing comma after very last image element!
-		["img/5.jpg", "", "", "A piano not played is a piano that's wasting away. "],
-		["img/6.jpg", "", "", "A piano not played is a piano that's wasting away. "]
+		["http://www.dynamicdrive.com/dynamicindex4/pool.jpg"],
+		["http://www.dynamicdrive.com/dynamicindex4/cave.jpg"],
+		["http://www.dynamicdrive.com/dynamicindex4/fruits.jpg"],
+		["http://www.dynamicdrive.com/dynamicindex4/dog.jpg"] //<--no trailing comma after very last image element!
 	],
-	displaymode: {type:'auto', pause:3000, cycles:0, wraparound:false},
+	displaymode: {type:'auto', pause:2500, cycles:0, wraparound:false},
 	persist: false, //remember last viewed slide and recall within same session?
 	fadeduration: 500, //transition duration (milliseconds)
 	descreveal: "always",
-	togglerid: "fadeshow4toggler"
+	togglerid: ""
 })
 </script>
 <!-- img -->
@@ -76,7 +74,7 @@ var mygallery4=new fadeSlideShow({
 <!-- img -->
 <div class="container">
 <div class="block">
-<div id="fadeshow4"></div>
+<div id="fadeshow1"></div>
 <div id="fadeshow4toggler" style="width:100%; text-align:right;">
 <span class="status"></span>
 </div>
