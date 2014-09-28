@@ -17,4 +17,11 @@ $(document).ready(function() {
 		var reset = $('body').offset();
 		$('html, body').animate({scrollTop : reset});
 		});
+	/* location */
+	$('.search').click(function(){
+		location.href="index11.html";
+		});
+	$('.my').click(function(){
+		location.href="index11.html";
+		});
 });
