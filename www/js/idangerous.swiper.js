@@ -320,24 +320,13 @@ $('.swiper-slide').scroll(function(){
 	
 });
 /**/
-$(window).scroll(function(){
-	
-	if($(this).scrollTop() > scrollFinish){
-					
-				$('.footoption').css({'display':'none'});		
+$(window).scroll(function(){		
 			
-		}else if($(this).scrollTop() < scrollFinish){
-			
+		 if($(this).scrollTop() < scrollFinish){
 				$('.footoption').css({'display':''});
 		}
-		scrollFinish = $(this).scrollTop();
-	
-	if(scrollFinish < 0){
-		 $(this).css({overflow:'hidden'}).bind('touchmove', function(e){e.preventDefault()});
-	}
 	
 });
-
 }
 if(params.loop){var ls=_this.loopedSlides;_this.activeLoopIndex=_this.activeIndex- ls;if(_this.activeLoopIndex>=_this.slides.length- ls*2){_this.activeLoopIndex=_this.slides.length- ls*2- _this.activeLoopIndex;}
 if(_this.activeLoopIndex<0){_this.activeLoopIndex=_this.slides.length- ls*2+ _this.activeLoopIndex;}
