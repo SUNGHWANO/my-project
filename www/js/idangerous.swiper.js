@@ -307,11 +307,11 @@ $('.swiper-slide').scroll(function(){
 	if($(this).scrollTop() > scrollFinish){
 					
 				$('.footoption').css({'display':'none'});		
-				$(window).scrollTop($(this).scrollTop());
+			
 		}else if($(this).scrollTop() < scrollFinish){
 			
 				$('.footoption').css({'display':''});
-				
+
 		}
 		scrollFinish = $(this).scrollTop();
 	
