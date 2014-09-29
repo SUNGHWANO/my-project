@@ -7,6 +7,7 @@ $(document).ready(function() {
 	    }else if ($(window).scrollTop() == 0) {
 	    	$('.swiper-slide').css({'overflow':''});   
 	    }else{
+	    	$('.swiper-slide').css({'overflow':''});
 	    	//$('.swiper-slide').css({'overflow':''});
 	    	//$('.swiper-slide').css({overflow:'hidden'}).bind('touchmove', function(e){e.preventDefault()});
 	    }   
