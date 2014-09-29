@@ -29,8 +29,9 @@ $(document).ready(function() {
 		roll : false,
 		page : 1,
 		speed : 300,
-		btn_prev : $("#touchSlider2").next().find(".btn_prev"),
-		btn_next : $("#touchSlider2").next().find(".btn_next")
+		counter : function (e) {
+			$("#count").html("current : " + e.current + ", total : " + e.total);
+		}
 	});
 	
 });
