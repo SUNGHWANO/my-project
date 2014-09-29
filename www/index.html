@@ -14,10 +14,11 @@
 <!-- menulist -->
 <!-- img -->
 <style>
-#touchSlider2 { width:100%; height:150px; margin:0 auto; background:#ccc; position:relative; overflow:hidden; }
-#touchSlider2 ul { width:100%; height:150px; position:absolute; top:0; left:0; overflow:hidden; }
-#touchSlider2 ul li { float:left; width:100%; height:150px; background:#9C9; font-size:14px; color:#fff; }
+#touchSlider2 { width:100%; height:100%; background:#FAFAFA; position:relative; overflow:hidden; }
+#touchSlider2 ul { width:100%; height:100%; overflow:hidden; }
+#touchSlider2 ul li { float:left; width:100%; height:100%; background:#9C9; }
 #count { bottom: 0; position: absolute; height:36px; font-size:16px; line-height:36px; text-align:right;}
+img { width:100%; height:100%; }
 </style>
 <script type="text/javascript" src="jquery.event.drag-1.5.min.js"></script>
 <script type="text/javascript" src="jquery.touchSlider.js"></script>
@@ -79,16 +80,22 @@ $(document).ready(function() {
 <div id="touchSlider2">
 	<ul>
 		<li>
-			content 1
+			<img src="img/1.jpg"/>
 		</li>
-		<li style="background:#396">
-			content 2
+		<li>
+			<img src="img/2.jpg"/>
 		</li>
-		<li style="background:#39C">
-			content 3
+		<li>
+			<img src="img/3.jpg"/>
 		</li>
-		<li style="background:#33C">
-			content 4
+		<li>
+			<img src="img/4.jpg"/>
+		</li>
+		<li>
+			<img src="img/5.jpg"/>
+		</li>
+		<li>
+			<img src="img/6.jpg"/>
 		</li>
 	</ul>
 <div id="count"></div>
