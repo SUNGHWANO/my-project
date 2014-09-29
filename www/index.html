@@ -14,9 +14,9 @@
 <!-- menulist -->
 <!-- img -->
 <style>
-#touchSlider2 { width:100%; height:100%; background:#FAFAFA; position:relative; overflow:hidden; }
-#touchSlider2 ul { width:100%; height:100%; overflow:hidden; }
-#touchSlider2 ul li { float:left; width:100%; height:100%; background:#9C9; }
+#touchSlider { width:100%; height:100%; background:#FAFAFA; position:relative; overflow:hidden; }
+#touchSlider ul { width:100%; height:100%; overflow:hidden; }
+#touchSlider ul li { float:left; width:100%; height:100%; background:#9C9; }
 #count { bottom: 0; position: absolute; height:36px; font-size:16px; line-height:36px; text-align:right; color: white;}
 img { width:100%; height:100%; }
 </style>
@@ -25,12 +25,10 @@ img { width:100%; height:100%; }
 <script type="text/javascript">
 $(document).ready(function() {
 	
-	$("#touchSlider2").touchSlider({
-		roll : true,
-		page : 1,
-		speed : 300,
+	$("#touchSlider").touchSlider({
+		flexible : true,
 		counter : function (e) {
-			$("#count").html( e.current + "/" + e.total);
+			$("#count").html("current : " + e.current + ", total : " + e.total);
 		}
 	});
 	
@@ -77,7 +75,7 @@ $(document).ready(function() {
 <!-- img -->
 <div class="container">
 <div class="block">
-<div id="touchSlider2">
+<div id="touchSlider">
 	<ul>
 		<li>
 			<img src="img/1.jpg"/>
