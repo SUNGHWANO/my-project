@@ -1,296 +1,139 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Flick Navigation</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
-<link rel="stylesheet" href="common.css" type="text/css" />
-<style type="text/css">
-h1 { font-size:16px; font-weight:bold; }
-h2 { margin-top:10px; text-align:center; }
-
-#touchSlider { width:100%; height:150px; margin:0 auto; background:#ccc; position:relative; overflow:hidden; }
-#touchSlider ul { width:99999px; height:150px; position:absolute; top:0; left:0; overflow:hidden; }
-#touchSlider ul li { float:left; width:100%; height:150px; background:#9C9; font-size:14px; color:#fff; }
-
-#touchSlider2 { width:200px; height:150px; margin:0 auto; background:#ccc; position:relative; overflow:hidden; }
-#touchSlider2 ul { width:99999px; height:150px; position:absolute; top:0; left:0; overflow:hidden; }
-#touchSlider2 ul li { float:left; width:200px; height:150px; background:#9C9; font-size:14px; color:#fff; }
-
-#touchSlider3 { width:240px; height:150px; margin:0 auto; background:#ccc; position:relative; overflow:hidden; }
-#touchSlider3 ul { width:99999px; height:150px; position:absolute; top:0; left:0; overflow:hidden; }
-#touchSlider3 ul li { float:left; width:80px; height:150px; background:#9C9; font-size:14px; color:#fff; }
-
-#touchSlider4 { width:240px; height:150px; margin:0 auto; background:#ccc; position:relative; overflow:hidden; }
-#touchSlider4 ul { width:99999px; height:150px; position:absolute; top:0; left:0; overflow:hidden; }
-#touchSlider4 ul li { float:left; width:80px; height:150px; background:#9C9; font-size:14px; color:#fff; }
-
-#touchSlider5 { width:100%; height:150px; margin:0 auto; background:#ccc; position:relative; overflow:hidden; }
-#touchSlider5 ul { width:99999px; height:150px; position:absolute; top:0; left:0; overflow:hidden; }
-#touchSlider5 ul li { float:left; width:100%; height:150px; background:#9C9; font-size:14px; color:#fff; }
-
-#touchSlider6 { width:100%; height:150px; margin:0 auto; background:#ccc; position:relative; overflow:hidden; }
-#touchSlider6 ul { width:99999px; height:150px; position:absolute; top:0; left:0; overflow:hidden; }
-#touchSlider6 ul li { float:left; width:100%; height:150px; background:#9C9; font-size:14px; color:#fff; }
-
-.btn_area { background:#f5f5f5; overflow:hidden; }
-.btn_area button { display:block; width:100px; height:36px; background:#000; font-size:16px; color:#fff; font-weight:bold; }
-.btn_area button.btn_prev { float:left; }
-.btn_area button.btn_next { float:right; }
-.btn_area .btn_page { display:inline-block; width:10px; height:10px; margin:3px; font-size:0px; line-height:0; text-indent:-9999px; background:#3399CC; }
-.btn_area .btn_page.on { background:#ff0000; }
-</style>
+<meta charset="UTF-8">
+<title>Insert title here</title>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<!-- index -->
+<link rel="stylesheet" href="css/index.css">
+<!-- index -->
+<!-- menulist -->
+<link rel="stylesheet" href="css/idangerous.swiper.css">
+<link rel="stylesheet" href="css/idangerous.swiper.scrollbar.css">
+<link rel="stylesheet" href="css/menulist.css">
+<!-- menulist -->
+<!-- img -->
+<style>
+#touchSlider2 { width:100%; height:100%; background:#FAFAFA; position:relative; overflow:hidden; }
+#touchSlider2 ul { width:100%; height:100%; overflow:hidden; }
+#touchSlider2 ul li { float:left; width:100%; height:100%; background:#9C9; }
+#count { bottom: 0; position: absolute; height:36px; font-size:16px; line-height:36px; text-align:right; color: white;}
+img { width:100%; height:100%; }
+</style>
 <script type="text/javascript" src="jquery.event.drag-1.5.min.js"></script>
 <script type="text/javascript" src="jquery.touchSlider.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
 	
-	$("#touchSlider").touchSlider({
-		flexible : true,
-		btn_prev : $("#touchSlider").next().find(".btn_prev"),
-		btn_next : $("#touchSlider").next().find(".btn_next"),
-		counter : function (e) {
-			$("#count").html("current : " + e.current + ", total : " + e.total);
-		}
-	});
-	
 	$("#touchSlider2").touchSlider({
 		roll : true,
-		page : 2,
-		speed : 300,
-		btn_prev : $("#touchSlider2").next().find(".btn_prev"),
-		btn_next : $("#touchSlider2").next().find(".btn_next")
-	});
-	
-	$("#touchSlider3").touchSlider({
-		roll : true,
-		view : 3,
-		btn_prev : $("#touchSlider3").next().find(".btn_prev"),
-		btn_next : $("#touchSlider3").next().find(".btn_next")
-	});
-	
-	$("#touchSlider4").touchSlider({
-		view : 3,
-		btn_prev : $("#touchSlider4").next().find(".btn_prev"),
-		btn_next : $("#touchSlider4").next().find(".btn_next")
-	});
-	
-	$("#touchSlider5").touchSlider({
-		flexible : true,
-		view : 5,
-		btn_prev : $("#touchSlider5").next().find(".btn_prev"),
-		btn_next : $("#touchSlider5").next().find(".btn_next")
-	});
-	
-	$("#touchSlider6").touchSlider({
-		flexible : true,
-		initComplete : function (e) {
-			$("#touchSlider6_paging").html("");
-			var num = 1;
-			$("#touchSlider6 ul li").each(function (i, el) {
-				if((i+1) % e._view == 0) {
-					$("#touchSlider6_paging").append('<button type="button" class="btn_page">page' + (num++) + '</button>');
-				}
-			});
-			$("#touchSlider6_paging .btn_page").bind("click", function (e) {
-				var i = $(this).index();
-				$("#touchSlider6").get(0).go_page(i);
-			});
-		},
+		page : 1,
+		speed : 1,
 		counter : function (e) {
-			$("#touchSlider6_paging .btn_page").removeClass("on").eq(e.current-1).addClass("on");
+			$("#count").html( e.current + "/" + e.total);
 		}
 	});
 	
 });
 </script>
+<!-- img -->
 </head>
-
 <body>
-<h1>Flick Navigation (jQuery.touchSlider, dohoons)</h1>
-<p>좌우로 터치드래그~ </p>
-
-<h2>1 : rolling, flexible, counter</h2>
-<div id="touchSlider">
-	<ul>
-		<li>
-			content 1
-		</li>
-		<li style="background:#396">
-			content 2
-		</li>
-		<li style="background:#39C">
-			content 3
-		</li>
-		<li style="background:#33C">
-			content 4
-		</li>
-	</ul>
+<!-- header -->
+<div class="header">
+<div class="app">
+<div class="mainlist">Food</div>
+<div class="mainlist">Dessert</div>
+<div class="mainlist">Bar</div>
+<div class="mainlist">Life</div>
 </div>
-<div class="btn_area">
-	<button type="button" class="btn_prev">prev</button>
-	<button type="button" class="btn_next">next</button>
-	<div id="count" style="height:36px; font-size:16px; line-height:36px; text-align:center;">
-	</div>
+<div class="swiper-scrollbar"></div>
 </div>
-
-<h2>2 : limit, page:2, speed:300</h2>
+<div class="headerhidden"></div>
+<!-- header -->
+<!-- middle -->
+<div class="middle">
+<!-- menubar -->
+<div class="menubar">
+<div class="menubarcontainer">
+<div class="topmenubar">
+<div class="category c1">자장면</div>
+<div class="category c2">자장면</div>
+<div class="category c3">자장면</div>
+<div class="category c4">자장면</div>
+</div>
+</div>
+<div class="menubarcontainer2">
+<div class="topmenubar2">
+<div class="category c5">자장면</div>
+<div class="category c6">자장면</div>
+<div class="category c7">자장면</div>
+<div class="category c8">자장면</div>
+</div>
+</div>
+</div>
+<div class="menubarhidden"></div>
+<!-- menubar -->
+<!-- img -->
+<div class="container">
+<div class="block">
 <div id="touchSlider2">
 	<ul>
 		<li>
-			content 1
+			<img src="img/1.jpg"/>
 		</li>
-		<li style="background:#396">
-			content 2
+		<li>
+			<img src="img/2.jpg"/>
 		</li>
-		<li style="background:#39C">
-			content 3
+		<li>
+			<img src="img/3.jpg"/>
 		</li>
-		<li style="background:#33C">
-			content 4
+		<li>
+			<img src="img/4.jpg"/>
+		</li>
+		<li>
+			<img src="img/5.jpg"/>
+		</li>
+		<li>
+			<img src="img/6.jpg"/>
 		</li>
 	</ul>
+<div id="count"></div>
 </div>
-<div class="btn_area">
-	<button type="button" class="btn_prev">prev</button>
-	<button type="button" class="btn_next">next</button>
 </div>
-
-<h2>3 : multiple, view:3, limit</h2>
-<div id="touchSlider3">
-	<ul>
-		<li>
-			content 1
-		</li>
-		<li style="background:#396">
-			content 2
-		</li>
-		<li style="background:#39C">
-			content 3
-		</li>
-		<li>
-			content 4
-		</li>
-		<li style="background:#396">
-			content 5
-		</li>
-		<li style="background:#39C">
-			content 6
-		</li>
-		<li>
-			content 7
-		</li>
-		<li style="background:#396">
-			content 8
-		</li>
-		<li style="background:#39C">
-			content 9
-		</li>
-	</ul>
 </div>
-<div class="btn_area">
-	<button type="button" class="btn_prev">prev</button>
-	<button type="button" class="btn_next">next</button>
+<!-- img -->
+<!-- menulist -->
+<div class="swiper-container">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div>외식1</div><div>외식2</div><div>외식3</div><div>외식4</div><div>외식5</div><div>외식6</div><div>외식6</div><div>외식6</div><div>외식6</div><div>외식6</div><div>외식6</div>
 </div>
-
-<h2>4 : multiple, view:3, rolling</h2>
-<div id="touchSlider4">
-	<ul>
-		<li>
-			content 1
-		</li>
-		<li style="background:#396">
-			content 2
-		</li>
-		<li style="background:#39C">
-			content 3
-		</li>
-		<li>
-			content 4
-		</li>
-		<li style="background:#396">
-			content 5
-		</li>
-		<li style="background:#39C">
-			content 6
-		</li>
-		<li>
-			content 7
-		</li>
-		<li style="background:#396">
-			content 8
-		</li>
-		<li style="background:#39C">
-			content 9
-		</li>
-	</ul>
+<div class="swiper-slide">
+<div>디저트1</div><div>디저트2</div><div>디저트3</div><div>디저트4</div><div>디저트5</div><div>디저트</div><div>디저트</div><div>외식6</div><div>외식6</div><div>외식6</div><div>외식6</div>
 </div>
-<div class="btn_area">
-	<button type="button" class="btn_prev">prev</button>
-	<button type="button" class="btn_next">next</button>
+<div class="swiper-slide">
+<div>주류1</div><div>주류2</div><div>주류3</div><div>주류4</div><div>주류5</div><div>주류6</div><div>주류6</div><div>외식6</div><div>외식6</div><div>외식6</div><div>외식6</div>
 </div>
-
-<h2>5 : multiple, view:5, flexible, rolling</h2>
-<div id="touchSlider5">
-	<ul>
-		<li>
-			content 1
-		</li>
-		<li style="background:#396">
-			content 2
-		</li>
-		<li style="background:#39C">
-			content 3
-		</li>
-		<li>
-			content 4
-		</li>
-		<li style="background:#396">
-			content 5
-		</li>
-		<li>
-			content 6
-		</li>
-		<li style="background:#396">
-			content 7
-		</li>
-		<li style="background:#39C">
-			content 8
-		</li>
-		<li>
-			content 9
-		</li>
-		<li style="background:#396">
-			content 10
-		</li>
-	</ul>
+<div class="swiper-slide">
+<div>생활1</div><div>생활2</div><div>생활3</div><div>생활4</div><div>생활5</div><div>외식6</div><div>외식6</div><div>외식6</div><div>외식6</div><div>외식6</div><div>외식6</div>
 </div>
-<div class="btn_area">
-	<button type="button" class="btn_prev">prev</button>
-	<button type="button" class="btn_next">next</button>
 </div>
-
-<h2>6 : flexible, rolling, paging, counter</h2>
-<div id="touchSlider6">
-	<ul>
-		<li>
-			content 1
-		</li>
-		<li style="background:#396">
-			content 2
-		</li>
-		<li style="background:#39C">
-			content 3
-		</li>
-		<li style="background:#33C">
-			content 4
-		</li>
-	</ul>
 </div>
-<div id="touchSlider6_paging" class="btn_area" style="text-align:center;"></div>
-
-<br /><br /><br /><br /><br /><br />
+<!-- menulist -->
+</div>
+<!-- middle -->
+<!-- options -->
+<div class="footoption">
+<div class="search">Search</div>
+<div class="my">My</div>
+</div>
+<!-- options -->
+<!-- menulist -->
+<script src="js/idangerous.swiper.js"></script>
+<script src="js/idangerous.swiper.scrollbar.js"></script>
+<script src="js/menulist.js"></script>
+<script src="js/index.js"></script>
+<!-- menulist -->
 </body>
 </html>
