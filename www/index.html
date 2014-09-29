@@ -17,7 +17,7 @@
 #touchSlider2 { width:100%; height:100%; background:#FAFAFA; position:relative; overflow:hidden; }
 #touchSlider2 ul { width:100%; height:100%; overflow:hidden; }
 #touchSlider2 ul li { float:left; width:100%; height:100%; background:#9C9; }
-#count { bottom: 0; position: absolute; height:36px; font-size:16px; line-height:36px; text-align:right;}
+#count { bottom: 0; position: absolute; height:36px; font-size:16px; line-height:36px; text-align:right; color: white;}
 img { width:100%; height:100%; }
 </style>
 <script type="text/javascript" src="jquery.event.drag-1.5.min.js"></script>
@@ -26,7 +26,7 @@ img { width:100%; height:100%; }
 $(document).ready(function() {
 	
 	$("#touchSlider2").touchSlider({
-		roll : false,
+		roll : true,
 		page : 1,
 		speed : 300,
 		counter : function (e) {
