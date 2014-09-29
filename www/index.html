@@ -30,7 +30,7 @@ $(document).ready(function() {
 		page : 1,
 		speed : 300,
 		counter : function (e) {
-			$("#count").html("current : " + e.current + ", total : " + e.total);
+			$("#count").html(e.current + " / " + e.total);
 		}
 	});
 	
