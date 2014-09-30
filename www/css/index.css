@@ -9,11 +9,11 @@ html, body{margin:0px;height:100%;width:100%;background-color:#FFFFFF;}
 .middle{height:92%;width:100%;margin:0px;}
 /* middle */
 /* img */
-.container{width:100%;height:32%;background-color:#FAFAFA;margin:0px;z-index:99999;}
+.container{width:100%;height:32%;background-color:#FAFAFA;margin:0px;z-index:99999;border-top:1px solid red;}
 .block{width:100%;height:100%;margin:0 auto;}
 /* img */
 /* menubar */
-.menubar{top:8%;width:100%;height:12%;border-top:4px solid #FAFAFA;border-bottom:1px solid red;font-family:Arial,Helvetica,sans-serif;color:#BDBDBD;font-size:13px;background-color:#FAFAFA;}
+.menubar{top:8%;width:100%;height:12%;border-top:4px solid #FAFAFA;font-family:Arial,Helvetica,sans-serif;color:#BDBDBD;font-size:13px;background-color:#FAFAFA;}
 .menubarcontainer{width:100%;height:50%;margin:0px;display:table;z-index:9;display:table;}
 .topmenubar{width:100%;font-weight:bold;margin:0px;display:table-cell;text-align:center;vertical-align:middle;}
 .c1,.c2,.c3,.c4{width:25%;float:left;}
