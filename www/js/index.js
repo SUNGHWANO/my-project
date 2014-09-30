@@ -8,7 +8,6 @@ $(document).ready(function() {
 	    	$('.swiper-slide').css({'overflow':''});   
 	    }else{
 	    	//$('.swiper-slide').css({'overflow':''});
-	    	//$('.swiper-slide').css({'overflow':''});
 	    	//$('.swiper-slide').css({overflow:'hidden'}).bind('touchmove', function(e){e.preventDefault()});
 	    }   
 	    

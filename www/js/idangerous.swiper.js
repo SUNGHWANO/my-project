@@ -311,7 +311,6 @@ $('.swiper-slide').scroll(function(){
 		}else if($(this).scrollTop() < scrollFinish){
 			
 				$('.footoption').css({'display':''});
-
 		}
 		scrollFinish = $(this).scrollTop();
 	
