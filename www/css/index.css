@@ -9,8 +9,8 @@ html, body{margin:0px;height:100%;width:100%;background-color:#FFFFFF;}
 .middle{height:92.2%;width:100%;margin:0px;}
 /* middle */
 /* img */
-.container{width:100%;height:32%;background-color:#FAFAFA;margin:0px;z-index:99999;border-bottom:2px solid RED;}
-.block{width:100%;height:100%;margin:0 auto;}
+.container{width:100%;height:32%;background-color:#FAFAFA;margin:0px;z-index:99999;}
+.block{width:95%;height:100%;margin:0 auto;}
 /* img */
 /* menubar */
 .menubar{top:8%;width:100%;height:12%;border-top:4px solid #FAFAFA;font-family:Arial,Helvetica,sans-serif;color:#BDBDBD;font-size:13px;background-color:#FAFAFA;}
