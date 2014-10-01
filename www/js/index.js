@@ -28,7 +28,7 @@ $(document).ready(function() {
 	$('.category').click(function(){
 		$('.category').css({
 			"background-color":"#A4A4A4",
-			"color":"#FAFAFA"
+			"color":"#FFFFFF"
 		});
 		$(this).css({
 			"color":"rgba(0,0,0,0.5)"
