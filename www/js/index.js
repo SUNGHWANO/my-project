@@ -31,18 +31,7 @@ $(document).ready(function() {
 			"color":"#BDBDBD"
 		});
 		$(this).css({
-			"background-color":"#A4A4A4",
-			"color":"white"
-		});
-	});
-	$('.select3').click(function(){
-		$('.select3').css({
-			"background-color":"#FAFAFA",
-			"color":"#BDBDBD"
-		});
-		$(this).css({
-			"background-color":"#A4A4A4",
-			"color":"white"
+			"color":"rgba(0,0,0,0.5)"
 		});
 	});
 	/**/
