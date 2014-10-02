@@ -3,7 +3,7 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		//$('.swiper-slide').css({'overflow':'auto'});    
 		if ($(window).scrollTop() == $(document).height() - $(window).height()) {
-	        $('.swiper-slide').css({'overflow':'auto'});    
+	        //$('.swiper-slide').css({'overflow':'auto'});    
 	    }else if ($(window).scrollTop() == 0) {
 	    	$('.swiper-slide').css({'overflow':''});   
 	    }else{
