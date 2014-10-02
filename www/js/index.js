@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	/* autoscroll */
+	$('.swiper-slide').css({'overflow':'auto'});    
 	$(window).scroll(function() {
-		//$('.swiper-slide').css({'overflow':'auto'});    
 		if ($(window).scrollTop() == $(document).height() - $(window).height()) {
 	        //$('.swiper-slide').css({'overflow':'auto'});    
 	    }else if ($(window).scrollTop() == 0) {
