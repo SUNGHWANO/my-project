@@ -2,7 +2,7 @@
 .swiper-wrapper{margin:0px;}
 .swiper-slide{height:100%;margin:0px;line-height:500%;background-color:#FFFFFF;text-align:left;}
 .swiper-scrollbar{position:fixed;width:100%;left:0;top:7.9%;margin:0px;z-index:99999;background-color:#A4A4A4;}
-.swiper-scrollbar-drag{position:fixed;height:0.9%;background-color:#D8D8D8;top:7.155%;margin:0px;z-index:99999;}
+.swiper-scrollbar-drag{position:fixed;height:0.9%;background-color:#D8D8D8;top:7.152%;margin:0px;z-index:99999;}
 .swiper-slide > div{border-bottom:3px solid #FAFAFA;margin:0px;}
 /* options */
 .footoption{display:table;height:8%;width:100%;z-index:999;bottom:0;left:0;position:fixed;background-color:white;color:rgba(0,0,0,0.5);font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;}
