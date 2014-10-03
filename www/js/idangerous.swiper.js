@@ -327,13 +327,13 @@ $('.swiper-slide').scroll(function(){
 	
 	if($(this).scrollTop() > scrollFinish){
 					
-			$('.footoption').css({'display':'none'});	
-			$('.menubar').css({'display':'none'});
+			//$('.footoption').css({'display':'none'});	
+			//$('.menubar').css({'display':'none'});
 			
 		}else if($(this).scrollTop() < scrollFinish){
 			
-			$('.footoption').css({'display':''});
-			$('.menubar').css({'display':''});	
+			//$('.footoption').css({'display':''});
+			//$('.menubar').css({'display':''});	
 				
 		}
 		scrollFinish = $(this).scrollTop();
