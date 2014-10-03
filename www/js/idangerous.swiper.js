@@ -264,7 +264,7 @@ won = 5;
 /**/
 var scrollFinish = 0;
 if(won == 1){
-	$('.menubar').fadeOut();
+	$('.menubar').css({'display':'none'});
 	$('.footoption').fadeIn();	
 	$('.menubarhidden').css({'display':'none'});
 	$('.container').css({'display':'none','top':'8%'});
@@ -328,12 +328,13 @@ $('.swiper-slide').scroll(function(){
 	if($(this).scrollTop() > scrollFinish){
 					
 			$('.footoption').fadeOut();		
-			$('.menubar').fadeOut();	
+			$('.menubar').css({'display':'none'});
 			
 		}else if($(this).scrollTop() < scrollFinish){
 			
 			$('.footoption').fadeIn();	
 			$('.menubar').fadeIn();	
+				
 		}
 		scrollFinish = $(this).scrollTop();
 	
