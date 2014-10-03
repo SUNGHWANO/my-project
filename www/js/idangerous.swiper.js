@@ -269,8 +269,8 @@ if(won == 1){
 	$('.menubarhidden').css({'display':'none'});
 	$('.container').css({'display':'none','top':'8%'});
 }else if(won == 2){
-	$('.menubar').fadeIn();
-	$('.footoption').fadeIn();	
+	$('.menubar').css({'display':''});
+	$('.footoption').css({'display':''});
 	$('.menubarhidden').css({'display':''});
 	$('.c1')[0].innerHTML = '치킨';
 	$('.c2')[0].innerHTML = '피자';
@@ -282,8 +282,8 @@ if(won == 1){
 	$('.c8')[0].innerHTML = '패스트푸드';
 	scrollFinish = $('.swiper-slide')[0].scrollTop;
 }else if(won == 3){
-	$('.menubar').fadeIn();
-	$('.footoption').fadeIn();	
+	$('.menubar').css({'display':''});
+	$('.footoption').css({'display':''});
 	$('.menubarhidden').css({'display':''});
 	$('.c1')[0].innerHTML = '커피';
 	$('.c2')[0].innerHTML = '차';
@@ -295,8 +295,8 @@ if(won == 1){
 	$('.c8')[0].innerHTML = '';
 	scrollFinish = $('.swiper-slide')[1].scrollTop;
 }else if(won == 4){
-	$('.menubar').fadeIn();
-	$('.footoption').fadeIn();	
+	$('.menubar').css({'display':''});
+	$('.footoption').css({'display':''});	
 	$('.menubarhidden').css({'display':''});
 	$('.c1')[0].innerHTML = '호프';
 	$('.c2')[0].innerHTML = '바';
@@ -308,8 +308,8 @@ if(won == 1){
 	$('.c8')[0].innerHTML = '';
 	scrollFinish = $('.swiper-slide')[2].scrollTop;
 }else if(won == 5){
-	$('.menubar').fadeIn();
-	$('.footoption').fadeIn();	
+	$('.menubar').css({'display':''});
+	$('.footoption').css({'display':''});;	
 	$('.menubarhidden').css({'display':''});
 	$('.c1')[0].innerHTML = '미용';
 	$('.c2')[0].innerHTML = '헬스';
@@ -327,13 +327,13 @@ $('.swiper-slide').scroll(function(){
 	
 	if($(this).scrollTop() > scrollFinish){
 					
-			$('.footoption').fadeOut();		
+			$('.footoption').css({'display':'none'});	
 			$('.menubar').css({'display':'none'});
 			
 		}else if($(this).scrollTop() < scrollFinish){
 			
-			$('.footoption').fadeIn();	
-			$('.menubar').fadeIn();	
+			$('.footoption').css({'display':''});
+			$('.menubar').css({'display':''});	
 				
 		}
 		scrollFinish = $(this).scrollTop();
