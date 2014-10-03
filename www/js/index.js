@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	/* autoscroll */
-	$('.swiper-container').css({'overflow':'auto'});    
+	$('.swiper-slide').css({'overflow':'auto'});    
 	$(window).scroll(function() {
 		if ($(window).scrollTop() == $(document).height() - $(window).height()) {
 	        //$('.swiper-slide').css({'overflow':'auto'});    
