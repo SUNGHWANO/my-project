@@ -256,11 +256,20 @@ var aa4 = a4.split(' ')[1];
 if(aa4 == 'swiper-slide-visible'){
 won = 4;
 }
+var a5 = $('.swiper-slide')[4].className;
+var aa5 = a5.split(' ')[1];
+if(aa5 == 'swiper-slide-visible'){
+won = 5;
+}
 /**/
-
 var scrollFinish = 0;
-
 if(won == 1){
+	$('.menubar').css({'display':'none'});
+	$('.menubarhidden').css({'display':'none'});
+	$('.container').css({'display':'none','top':'8%'});
+}else if(won == 2){
+	$('.menubar').css({'display':''});
+	$('.menubarhidden').css({'display':''});
 	$('.c1')[0].innerHTML = '치킨';
 	$('.c2')[0].innerHTML = '피자';
 	$('.c3')[0].innerHTML = '중국집';
@@ -270,7 +279,9 @@ if(won == 1){
 	$('.c7')[0].innerHTML = '뷔페';
 	$('.c8')[0].innerHTML = '패스트푸드';
 	scrollFinish = $('.swiper-slide')[0].scrollTop;
-}else if(won == 2){
+}else if(won == 3){
+	$('.menubar').css({'display':''});
+	$('.menubarhidden').css({'display':''});
 	$('.c1')[0].innerHTML = '커피';
 	$('.c2')[0].innerHTML = '차';
 	$('.c3')[0].innerHTML = '샐러드';
@@ -280,7 +291,9 @@ if(won == 1){
 	$('.c7')[0].innerHTML = '';
 	$('.c8')[0].innerHTML = '';
 	scrollFinish = $('.swiper-slide')[1].scrollTop;
-}else if(won == 3){
+}else if(won == 4){
+	$('.menubar').css({'display':''});
+	$('.menubarhidden').css({'display':''});
 	$('.c1')[0].innerHTML = '호프';
 	$('.c2')[0].innerHTML = '바';
 	$('.c3')[0].innerHTML = '세계맥주';
@@ -290,7 +303,9 @@ if(won == 1){
 	$('.c7')[0].innerHTML = '';
 	$('.c8')[0].innerHTML = '';
 	scrollFinish = $('.swiper-slide')[2].scrollTop;
-}else if(won == 4){
+}else if(won == 5){
+	$('.menubar').css({'display':''});
+	$('.menubarhidden').css({'display':''});
 	$('.c1')[0].innerHTML = '미용';
 	$('.c2')[0].innerHTML = '헬스';
 	$('.c3')[0].innerHTML = '패션';
@@ -301,17 +316,19 @@ if(won == 1){
 	$('.c8')[0].innerHTML = '';
 	scrollFinish = $('.swiper-slide')[3].scrollTop;
 }
+
 /**/
 $('.swiper-slide').scroll(function(){
 	
 	if($(this).scrollTop() > scrollFinish){
 					
 			$('.footoption').fadeOut();		
-			$('.menubar').fadeOut();	
+			//$('.menubar').fadeOut();	
+			
 		}else if($(this).scrollTop() < scrollFinish){
 			
 			$('.footoption').fadeIn();	
-			$('.menubar').fadeIn();	
+			//$('.menubar').fadeIn();	
 		}
 		scrollFinish = $(this).scrollTop();
 	
