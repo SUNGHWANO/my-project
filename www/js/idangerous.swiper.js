@@ -302,25 +302,24 @@ if(won == 1){
 	scrollFinish = $('.swiper-slide')[3].scrollTop;
 }
 /**/
-$('.swiper-slide').scroll(function(){
+$('.swiper-container').scroll(function(){
 	
 	if($(this).scrollTop() > scrollFinish){
 					
 			$('.footoption').fadeOut();		
 			$('.menubar').fadeOut();	
+			$('.menubar').css({'display':'hidden'});
+			$('.container').css({'display':'hidden'});
 			
 		}else if($(this).scrollTop() < scrollFinish){
 			
 			$('.footoption').fadeIn();	
-	
+			$('.menubar').fadeIn();
 		}
 		scrollFinish = $(this).scrollTop();
 	
 	if(scrollFinish < 0){
 		 $(this).css({overflow:'hidden'}).bind('touchmove', function(e){e.preventDefault()});
-	}
-	if(scrollFinish == 0){
-		 $('.menubar').fadeOut();	
 	}
 	
 });
@@ -330,14 +329,14 @@ $(window).scroll(function(){
 	if ($(window).scrollTop() == $(document).height() - $(window).height()) {
         //$('.swiper-slide').css({'overflow':'auto'});    
 		//$('.swiper-scrollbar2').css({'border-bottom':'1px solid #FFFFFF'});
-		$('.swiper-slide').css({'overflow':'auto'});    	
+		$('.swiper-container').css({'overflow':'auto'});    	
     }else if ($(window).scrollTop() == 0) {
     	//$('.swiper-slide').css({'overflow':''});   
     }else{
     	//$('.swiper-slide').css({'overflow':''});
     	//$('.swiper-slide').css({overflow:'hidden'}).bind('touchmove', function(e){e.preventDefault()});
     	//$('.swiper-scrollbar2').css({'border-bottom':'1px solid #D8D8D8'});
-    	$('.swiper-slide').css({'overflow':''}); 
+    	$('.swiper-container').css({'overflow':''}); 
     	$('.menubar').fadeIn();
     }   
 	
