@@ -302,7 +302,7 @@ if(won == 1){
 	scrollFinish = $('.swiper-slide')[3].scrollTop;
 }
 /**/
-$('.swiper-slide').scroll(function(){
+$('.swiper-container').scroll(function(){
 	
 	if($(this).scrollTop() > scrollFinish){
 					

@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	/* autoscroll */
-	$('.swiper-slide').css({'overflow':'auto'});    
+	$('.swiper-container').css({'overflow':'auto'});    
 	$(window).scroll(function() {
 		if ($(window).scrollTop() == $(document).height() - $(window).height()) {
 	        //$('.swiper-slide').css({'overflow':'auto'});    
@@ -14,7 +14,7 @@ $(document).ready(function() {
 	    }   
 	});
 	/* autoscroll */
-	$('.swiper-scrollbar').mousedown(function(e){
+	$('.swiper-container').mousedown(function(e){
 		$('.topoption').css({'display':'none'});
 		var reset = $('body').offset();
 		$('html, body').animate({scrollTop : reset});
