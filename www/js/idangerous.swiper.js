@@ -324,12 +324,12 @@ $('.swiper-container').scroll(function(){
 	
 });
 
+$('.swiper-container').css({'overflow':'auto'});    	
 $(window).scroll(function(){
 	
 	if ($(window).scrollTop() == $(document).height() - $(window).height()) {
         //$('.swiper-slide').css({'overflow':'auto'});    
 		//$('.swiper-scrollbar2').css({'border-bottom':'1px solid #FFFFFF'});
-		$('.swiper-container').css({'overflow':'auto'});    	
     }else if ($(window).scrollTop() == 0) {
     	//$('.swiper-slide').css({'overflow':''});   
     }else{
