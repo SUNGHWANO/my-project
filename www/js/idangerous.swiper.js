@@ -312,7 +312,7 @@ $('.swiper-slide').scroll(function(){
 		}else if($(this).scrollTop() < scrollFinish){
 			
 			$('.footoption').fadeIn();	
-			$('.menubar').fadeIn();
+	
 		}
 		scrollFinish = $(this).scrollTop();
 	
@@ -325,6 +325,18 @@ $('.swiper-slide').scroll(function(){
 	
 });
 
+$(window).scroll(function(){
+	
+	if($(this).scrollTop() > scrollFinish){
+					
+		}else if($(this).scrollTop() < scrollFinish){
+			
+			$('.footoption').fadeIn();	
+	
+		}
+		scrollFinish = $(this).scrollTop();
+	
+});
 /**/
 $(window).scroll(function(){		
 			
