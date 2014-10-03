@@ -306,12 +306,13 @@ $('.swiper-container').scroll(function(){
 	
 	if($(this).scrollTop() > scrollFinish){
 					
-				$('.footoption').css({'display':'none'});		
-			
+				//$('.footoption').css({'display':'none'});		
+				$('.footoption').fadeOut();
 		}else if($(this).scrollTop() < scrollFinish){
 			
-				$('.footoption').css({'display':''});
-		}
+				//$('.footoption').css({'display':''});
+				$('.footoption').fadeIn();
+		}	
 		scrollFinish = $(this).scrollTop();
 	
 	if(scrollFinish < 0){
