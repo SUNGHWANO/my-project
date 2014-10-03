@@ -319,6 +319,9 @@ $('.swiper-slide').scroll(function(){
 	if(scrollFinish < 0){
 		 $(this).css({overflow:'hidden'}).bind('touchmove', function(e){e.preventDefault()});
 	}
+	if(scrollFinish == 0){
+		 $('.menubar').fadeOut();	
+	}
 	
 });
 

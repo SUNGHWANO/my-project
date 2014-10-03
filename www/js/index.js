@@ -4,8 +4,7 @@ $(document).ready(function() {
 		if ($(window).scrollTop() == $(document).height() - $(window).height()) {
 	        //$('.swiper-slide').css({'overflow':'auto'});    
 			$('.swiper-scrollbar2').css({'border-bottom':'1px solid #FFFFFF'});
-			$('.swiper-slide').css({'overflow':'auto'});    
-			$('.menubar').fadeOut();	
+			$('.swiper-slide').css({'overflow':'auto'});    	
 	    }else if ($(window).scrollTop() == 0) {
 	    	//$('.swiper-slide').css({'overflow':''});   
 	    }else{
