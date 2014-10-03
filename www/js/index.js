@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	/* autoscroll */
-	$("body").css({overflow:'hidden'}).bind('touchmove', function(e){e.preventDefault()});
+	//$("body").css({overflow:'hidden'}).bind('touchmove', function(e){e.preventDefault()});
 	$('.swiper-container').css({'overflow':'auto'});    
 	$(window).scroll(function() {
 		if ($(window).scrollTop() == $(document).height() - $(window).height()) {
